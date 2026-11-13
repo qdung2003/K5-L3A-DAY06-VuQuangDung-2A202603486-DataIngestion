@@ -2,6 +2,8 @@
 
 Bài cá nhân **Vũ Quang Dũng — 2A202603486 — L3A**. Pipeline Python đã chạy thực tế trên 8 chương Python Tutorial **3.13.0**: **93 đơn vị nguồn**, **20 câu (15 dev / 5 test)**, ba cấu hình A/B/C, semantic embedding local và Chroma lưu trên đĩa.
 
+Repo bài nộp: [qdung2003/K5-L3A-DAY06-VuQuangDung-2A202603486-DataIngestion](https://github.com/qdung2003/K5-L3A-DAY06-VuQuangDung-2A202603486-DataIngestion). Nhánh main là bản nộp hiện tại. .gitattributes giữ nguyên byte để checksum nguồn, benchmark và trace không đổi sau khi clone.
+
 | Cấu hình | Dev Hit@1 | Dev Evidence Hit@3 | Test Hit@1 | Test Evidence Hit@3 | Chunk |
 |---|---:|---:|---:|---:|---:|
 | A: fixed 500, overlap 50 | 8/15 | 9/15 | 4/5 | 4/5 | 456 |

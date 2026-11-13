@@ -1,0 +1,3 @@
+# Preserve original bytes: frozen inputs and raw sources use SHA-256 checksums.
+# Disable Git newline conversion across platforms; do not rewrite frozen inputs.
+* -text
