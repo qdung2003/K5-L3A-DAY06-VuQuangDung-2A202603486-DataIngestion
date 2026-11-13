@@ -1,0 +1,33 @@
+{
+  "dense_weight": 0,
+  "dev_metrics": {
+    "0": {
+      "n": 15,
+      "hit_at_1": 13,
+      "hit_at_3": 15
+    },
+    "0.25": {
+      "n": 15,
+      "hit_at_1": 13,
+      "hit_at_3": 13
+    },
+    "0.5": {
+      "n": 15,
+      "hit_at_1": 11,
+      "hit_at_3": 13
+    },
+    "0.75": {
+      "n": 15,
+      "hit_at_1": 11,
+      "hit_at_3": 13
+    },
+    "1": {
+      "n": 15,
+      "hit_at_1": 9,
+      "hit_at_3": 13
+    }
+  },
+  "rule": "Max original dev Hit@3, then dev Hit@1, then higher dense weight. No original test used.",
+  "selected_at": "2026-11-13T11:16:42.270017+00:00",
+  "holdout_queries_executed_at_selection": 0
+}

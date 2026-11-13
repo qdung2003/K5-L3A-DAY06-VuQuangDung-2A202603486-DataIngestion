@@ -1,0 +1,62 @@
+{
+  "started_at": "2026-11-13T11:06:12.659880+00:00",
+  "finished_at": "2026-11-13T11:08:40.706118+00:00",
+  "elapsed_seconds": 148.04624509999996,
+  "model_load_seconds": 29.81831049999994,
+  "search_seconds": {
+    "A": 0.15355620000002546,
+    "B": 0.13542210000014165,
+    "C": 0.1491992000001119
+  },
+  "python": "3.13.15",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "libraries": {
+    "chromadb": "1.5.9",
+    "sentence-transformers": "6.3.0",
+    "torch": "2.15.0",
+    "transformers": "5.22.2",
+    "numpy": "2.5.4",
+    "pypdf": "6.21.4",
+    "python-dotenv": "1.2.4"
+  },
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "model_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "dimensions": 384,
+  "device": "cpu",
+  "threads": 4,
+  "model_max_seq_length": 256,
+  "query_document_processing": "Same tokenizer, mean pooling, L2 normalization; no prefixes; query text only.",
+  "store": "Chroma PersistentClient",
+  "store_path": "D:\\AI\\code\\K5-L3-Day06-DataIngestionEngineering-main\\starter\\vector_store",
+  "collections": [
+    "day06_a",
+    "day06_b",
+    "day06_c"
+  ],
+  "metric": "cosine",
+  "search": "approximate HNSW, search_ef=100; native where metadata filter",
+  "benchmark_sha256": "6de4a652c9a4d02650710ed8ade5f80cf503ccf2596013b49fcf375c099e1a3a",
+  "pages_sha256": "d5001ecfe081328eb2f3b7bb20c8e8b57f46e9c6bfb9ea6cbe25d50c4bce22b7",
+  "traces_sha256": "cdbf5e3f36d7ef568d39d01f2af0c36d0c9ab856728c8c45632680167f8c80f4",
+  "seed": "No random split; frozen ordered questions. HNSW internal randomness not controlled.",
+  "api_cost_usd": 0,
+  "cost_scope": "No paid API used; electricity, hardware, network not monetized.",
+  "config": {
+    "A": {
+      "method": "fixed",
+      "size": 500,
+      "overlap": 50,
+      "filter": false
+    },
+    "B": {
+      "method": "paragraph",
+      "max_size": 1000,
+      "filter": false
+    },
+    "C": {
+      "method": "paragraph",
+      "max_size": 1000,
+      "filter": "only when supplied in question"
+    }
+  }
+}

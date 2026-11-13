@@ -1,0 +1,48 @@
+{
+  "selected_dense_weight": 0,
+  "dev_grid": {
+    "0": {
+      "n": 15,
+      "hit_at_1": 13,
+      "hit_at_3": 15
+    },
+    "0.25": {
+      "n": 15,
+      "hit_at_1": 13,
+      "hit_at_3": 13
+    },
+    "0.5": {
+      "n": 15,
+      "hit_at_1": 11,
+      "hit_at_3": 13
+    },
+    "0.75": {
+      "n": 15,
+      "hit_at_1": 11,
+      "hit_at_3": 13
+    },
+    "1": {
+      "n": 15,
+      "hit_at_1": 9,
+      "hit_at_3": 13
+    }
+  },
+  "new_holdout_hybrid": {
+    "n": 5,
+    "hit_at_1": 4,
+    "hit_at_3": 4
+  },
+  "new_holdout_dense": {
+    "n": 5,
+    "hit_at_1": 3,
+    "hit_at_3": 4
+  },
+  "holdout_hit3_regressions": [
+    "H04"
+  ],
+  "dev_hit1_regressions": [],
+  "elapsed_seconds": 29.621235999999953,
+  "api_cost_usd": 0,
+  "caveat": "5 new questions authored after baseline test; same corpus, reused dev; no independent human audit.",
+  "fixed": "Same C chunks, same model/store, same section filters. RRF score is not cosine score."
+}

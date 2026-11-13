@@ -1,0 +1,9 @@
+{
+  "frozen_at": "2026-11-13T11:04:35.425218+00:00",
+  "benchmark_sha256": "6de4a652c9a4d02650710ed8ade5f80cf503ccf2596013b49fcf375c099e1a3a",
+  "pages_sha256": "d5001ecfe081328eb2f3b7bb20c8e8b57f46e9c6bfb9ea6cbe25d50c4bce22b7",
+  "split_rule": "Authored Q01-Q15 dev; Q16-Q20 test with different question topics. Shared chapters; not document-disjoint. No retrieval performed before freeze.",
+  "selection_rule": "Max dev Evidence Hit@3, then dev Hit@1; if tied prefer B, C, A in that order (B simpler than filtering and structurally aware). No test-based tuning.",
+  "coherence_sampling": "First 10 page IDs in lexicographic order; midpoint character of each unit. Choose earliest-starting chunk containing that position. Frozen before retrieval.",
+  "filter_origin": "The chapter is explicitly named in each filtered question. No gold IDs or answers supplied to the retrieval function."
+}

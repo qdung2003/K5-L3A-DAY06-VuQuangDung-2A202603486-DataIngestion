@@ -1,0 +1,18 @@
+{
+  "frozen_at": "2026-11-13T11:16:09.388682+00:00",
+  "holdout_sha256": "f559684316b78cc4d7203091c608f3bf37061848d8cbce0f57ec2897c1c0c367",
+  "original_dev_sha256": "6de4a652c9a4d02650710ed8ade5f80cf503ccf2596013b49fcf375c099e1a3a",
+  "dense_weights": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "rrf_k": 60,
+  "bm25_k1": 1.5,
+  "bm25_b": 0.75,
+  "selection_rule": "Max original dev Hit@3, then dev Hit@1, then higher dense weight. No original test used.",
+  "design": "Created after main baseline test was viewed; new topics/questions frozen before first hybrid retrieval. Same corpus; not document-independent.",
+  "fixed_data": "Exactly C chunks and question-provided section filters; only fusion changes."
+}

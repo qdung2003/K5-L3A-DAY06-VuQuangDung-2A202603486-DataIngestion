@@ -1,0 +1,752 @@
+[
+  {
+    "strategy": "A",
+    "page": "classes:001",
+    "anchor": 1019,
+    "chunk": {
+      "chunk_id": "34a476d0a721cb2ae50fc3bcc0db1ac0e629340f2af8f337339040bddfe47255",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:001",
+      "text": "for\nmodules, classes partake of the dynamic nature of Python: they are created at\nruntime, and can be modified further after creation.\n\nIn C++ terminology, normally class members (including the data members) are\n*public* (except see below tut-private), and all member functions are\n*virtual*.  As in Modula-3, there are no shorthands for referencing the object's\nmembers from its methods: the method function is declared with an explicit first\nargument representing the object, which is provided impl",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 0,
+        "unit_end": 2039,
+        "start_char": 900,
+        "end_char": 1400
+      }
+    },
+    "source_text": "Classes\n\nClasses provide a means of bundling data and functionality together.  Creating\na new class creates a new *type* of object, allowing new *instances* of that\ntype to be made.  Each class instance can have attributes attached to it for\nmaintaining its state.  Class instances can also have methods (defined by its\nclass) for modifying its state.\n\nCompared with other programming languages, Python's class mechanism adds classes\nwith a minimum of new syntax and semantics.  It is a mixture of the class\nmechanisms found in C++ and Modula-3.  Python classes provide all the standard\nfeatures of Object Oriented Programming: the class inheritance mechanism allows\nmultiple base classes, a derived class can override any methods of its base\nclass or classes, and a method can call the method of a base class with the same\nname.  Objects can contain arbitrary amounts and kinds of data.  As is true for\nmodules, classes partake of the dynamic nature of Python: they are created at\nruntime, and can be modified further after creation.\n\nIn C++ terminology, normally class members (including the data members) are\n*public* (except see below tut-private), and all member functions are\n*virtual*.  As in Modula-3, there are no shorthands for referencing the object's\nmembers from its methods: the method function is declared with an explicit first\nargument representing the object, which is provided implicitly by the call.  As\nin Smalltalk, classes themselves are objects.  This provides semantics for\nimporting and renaming.  Unlike C++ and Modula-3, built-in types can be used as\nbase classes for extension by the user.  Also, like in C++, most built-in\noperators with special syntax (arithmetic operators, subscripting etc.) can be\nredefined for class instances.\n\n(Lacking universally accepted terminology to talk about classes, I will make\noccasional use of Smalltalk and C++ terms.  I would use Modula-3 terms, since\nits object-oriented semantics are closer to those of Python than C++, but I\nexpect that few readers have heard of it.)\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "B",
+    "page": "classes:001",
+    "anchor": 1019,
+    "chunk": {
+      "chunk_id": "6466fe60ca2c1ac594d4b849821c1dbc917c76e49b9c5dbaa5eed81c4b0b3e9a",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:001",
+      "text": "Compared with other programming languages, Python's class mechanism adds classes\nwith a minimum of new syntax and semantics.  It is a mixture of the class\nmechanisms found in C++ and Modula-3.  Python classes provide all the standard\nfeatures of Object Oriented Programming: the class inheritance mechanism allows\nmultiple base classes, a derived class can override any methods of its base\nclass or classes, and a method can call the method of a base class with the same\nname.  Objects can contain arbitrary amounts and kinds of data.  As is true for\nmodules, classes partake of the dynamic nature of Python: they are created at\nruntime, and can be modified further after creation.",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 0,
+        "unit_end": 2039,
+        "start_char": 353,
+        "end_char": 1034
+      }
+    },
+    "source_text": "Classes\n\nClasses provide a means of bundling data and functionality together.  Creating\na new class creates a new *type* of object, allowing new *instances* of that\ntype to be made.  Each class instance can have attributes attached to it for\nmaintaining its state.  Class instances can also have methods (defined by its\nclass) for modifying its state.\n\nCompared with other programming languages, Python's class mechanism adds classes\nwith a minimum of new syntax and semantics.  It is a mixture of the class\nmechanisms found in C++ and Modula-3.  Python classes provide all the standard\nfeatures of Object Oriented Programming: the class inheritance mechanism allows\nmultiple base classes, a derived class can override any methods of its base\nclass or classes, and a method can call the method of a base class with the same\nname.  Objects can contain arbitrary amounts and kinds of data.  As is true for\nmodules, classes partake of the dynamic nature of Python: they are created at\nruntime, and can be modified further after creation.\n\nIn C++ terminology, normally class members (including the data members) are\n*public* (except see below tut-private), and all member functions are\n*virtual*.  As in Modula-3, there are no shorthands for referencing the object's\nmembers from its methods: the method function is declared with an explicit first\nargument representing the object, which is provided implicitly by the call.  As\nin Smalltalk, classes themselves are objects.  This provides semantics for\nimporting and renaming.  Unlike C++ and Modula-3, built-in types can be used as\nbase classes for extension by the user.  Also, like in C++, most built-in\noperators with special syntax (arithmetic operators, subscripting etc.) can be\nredefined for class instances.\n\n(Lacking universally accepted terminology to talk about classes, I will make\noccasional use of Smalltalk and C++ terms.  I would use Modula-3 terms, since\nits object-oriented semantics are closer to those of Python than C++, but I\nexpect that few readers have heard of it.)\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "C",
+    "page": "classes:001",
+    "anchor": 1019,
+    "chunk": {
+      "chunk_id": "6466fe60ca2c1ac594d4b849821c1dbc917c76e49b9c5dbaa5eed81c4b0b3e9a",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:001",
+      "text": "Compared with other programming languages, Python's class mechanism adds classes\nwith a minimum of new syntax and semantics.  It is a mixture of the class\nmechanisms found in C++ and Modula-3.  Python classes provide all the standard\nfeatures of Object Oriented Programming: the class inheritance mechanism allows\nmultiple base classes, a derived class can override any methods of its base\nclass or classes, and a method can call the method of a base class with the same\nname.  Objects can contain arbitrary amounts and kinds of data.  As is true for\nmodules, classes partake of the dynamic nature of Python: they are created at\nruntime, and can be modified further after creation.",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 0,
+        "unit_end": 2039,
+        "start_char": 353,
+        "end_char": 1034
+      }
+    },
+    "source_text": "Classes\n\nClasses provide a means of bundling data and functionality together.  Creating\na new class creates a new *type* of object, allowing new *instances* of that\ntype to be made.  Each class instance can have attributes attached to it for\nmaintaining its state.  Class instances can also have methods (defined by its\nclass) for modifying its state.\n\nCompared with other programming languages, Python's class mechanism adds classes\nwith a minimum of new syntax and semantics.  It is a mixture of the class\nmechanisms found in C++ and Modula-3.  Python classes provide all the standard\nfeatures of Object Oriented Programming: the class inheritance mechanism allows\nmultiple base classes, a derived class can override any methods of its base\nclass or classes, and a method can call the method of a base class with the same\nname.  Objects can contain arbitrary amounts and kinds of data.  As is true for\nmodules, classes partake of the dynamic nature of Python: they are created at\nruntime, and can be modified further after creation.\n\nIn C++ terminology, normally class members (including the data members) are\n*public* (except see below tut-private), and all member functions are\n*virtual*.  As in Modula-3, there are no shorthands for referencing the object's\nmembers from its methods: the method function is declared with an explicit first\nargument representing the object, which is provided implicitly by the call.  As\nin Smalltalk, classes themselves are objects.  This provides semantics for\nimporting and renaming.  Unlike C++ and Modula-3, built-in types can be used as\nbase classes for extension by the user.  Also, like in C++, most built-in\noperators with special syntax (arithmetic operators, subscripting etc.) can be\nredefined for class instances.\n\n(Lacking universally accepted terminology to talk about classes, I will make\noccasional use of Smalltalk and C++ terms.  I would use Modula-3 terms, since\nits object-oriented semantics are closer to those of Python than C++, but I\nexpect that few readers have heard of it.)\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "A",
+    "page": "classes:002",
+    "anchor": 1019,
+    "chunk": {
+      "chunk_id": "c7603819388426a5a0a6ad6f8ed2e7b0ad0ec194bc80473337ca432ea744c2ec",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:002",
+      "text": "spaces\n\nBefore introducing classes, I first have to tell you something about Python's\nscope rules.  Class definitions play some neat tricks with namespaces, and you\nneed to know how scopes and namespaces work to fully understand what's going on.\nIncidentally, knowledge about this subject is useful for any advanced Python\nprogrammer.\n\nLet's begin with some definitions.\n\nA *namespace* is a mapping from names to objects.  Most namespaces are currently\nimplemented as Python dictionaries, but that's ",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 2039,
+        "unit_end": 4078,
+        "start_char": 900,
+        "end_char": 1400
+      }
+    },
+    "source_text": "A Word About Names and Objects\n\nObjects have individuality, and multiple names (in multiple scopes) can be bound\nto the same object.  This is known as aliasing in other languages.  This is\nusually not appreciated on a first glance at Python, and can be safely ignored\nwhen dealing with immutable basic types (numbers, strings, tuples).  However,\naliasing has a possibly surprising effect on the semantics of Python code\ninvolving mutable objects such as lists, dictionaries, and most other types.\nThis is usually used to the benefit of the program, since aliases behave like\npointers in some respects.  For example, passing an object is cheap since only a\npointer is passed by the implementation; and if a function modifies an object\npassed as an argument, the caller will see the change --- this eliminates the\nneed for two different argument passing mechanisms as in Pascal.\n\nPython Scopes and Namespaces\n\nBefore introducing classes, I first have to tell you something about Python's\nscope rules.  Class definitions play some neat tricks with namespaces, and you\nneed to know how scopes and namespaces work to fully understand what's going on.\nIncidentally, knowledge about this subject is useful for any advanced Python\nprogrammer.\n\nLet's begin with some definitions.\n\nA *namespace* is a mapping from names to objects.  Most namespaces are currently\nimplemented as Python dictionaries, but that's normally not noticeable in any\nway (except for performance), and it may change in the future.  Examples of\nnamespaces are: the set of built-in names (containing functions such as abs, and\nbuilt-in exception names); the global names in a module; and the local names in\na function invocation.  In a sense the set of attributes of an object also form\na namespace.  The important thing to know about namespaces is that there is\nabsolutely no relation between names in different namespaces; for instance, two\ndifferent modules may both define a function maximize without confusion ---\nusers of the modules must prefix it with the module name.\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "B",
+    "page": "classes:002",
+    "anchor": 1019,
+    "chunk": {
+      "chunk_id": "7009f163258c29d1363aa662c58cc5d44571a2873a7599c09e5d30c1ee40b06d",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:002",
+      "text": "Before introducing classes, I first have to tell you something about Python's\nscope rules.  Class definitions play some neat tricks with namespaces, and you\nneed to know how scopes and namespaces work to fully understand what's going on.\nIncidentally, knowledge about this subject is useful for any advanced Python\nprogrammer.\n\nLet's begin with some definitions.",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 2039,
+        "unit_end": 4078,
+        "start_char": 908,
+        "end_char": 1270
+      }
+    },
+    "source_text": "A Word About Names and Objects\n\nObjects have individuality, and multiple names (in multiple scopes) can be bound\nto the same object.  This is known as aliasing in other languages.  This is\nusually not appreciated on a first glance at Python, and can be safely ignored\nwhen dealing with immutable basic types (numbers, strings, tuples).  However,\naliasing has a possibly surprising effect on the semantics of Python code\ninvolving mutable objects such as lists, dictionaries, and most other types.\nThis is usually used to the benefit of the program, since aliases behave like\npointers in some respects.  For example, passing an object is cheap since only a\npointer is passed by the implementation; and if a function modifies an object\npassed as an argument, the caller will see the change --- this eliminates the\nneed for two different argument passing mechanisms as in Pascal.\n\nPython Scopes and Namespaces\n\nBefore introducing classes, I first have to tell you something about Python's\nscope rules.  Class definitions play some neat tricks with namespaces, and you\nneed to know how scopes and namespaces work to fully understand what's going on.\nIncidentally, knowledge about this subject is useful for any advanced Python\nprogrammer.\n\nLet's begin with some definitions.\n\nA *namespace* is a mapping from names to objects.  Most namespaces are currently\nimplemented as Python dictionaries, but that's normally not noticeable in any\nway (except for performance), and it may change in the future.  Examples of\nnamespaces are: the set of built-in names (containing functions such as abs, and\nbuilt-in exception names); the global names in a module; and the local names in\na function invocation.  In a sense the set of attributes of an object also form\na namespace.  The important thing to know about namespaces is that there is\nabsolutely no relation between names in different namespaces; for instance, two\ndifferent modules may both define a function maximize without confusion ---\nusers of the modules must prefix it with the module name.\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "C",
+    "page": "classes:002",
+    "anchor": 1019,
+    "chunk": {
+      "chunk_id": "7009f163258c29d1363aa662c58cc5d44571a2873a7599c09e5d30c1ee40b06d",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:002",
+      "text": "Before introducing classes, I first have to tell you something about Python's\nscope rules.  Class definitions play some neat tricks with namespaces, and you\nneed to know how scopes and namespaces work to fully understand what's going on.\nIncidentally, knowledge about this subject is useful for any advanced Python\nprogrammer.\n\nLet's begin with some definitions.",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 2039,
+        "unit_end": 4078,
+        "start_char": 908,
+        "end_char": 1270
+      }
+    },
+    "source_text": "A Word About Names and Objects\n\nObjects have individuality, and multiple names (in multiple scopes) can be bound\nto the same object.  This is known as aliasing in other languages.  This is\nusually not appreciated on a first glance at Python, and can be safely ignored\nwhen dealing with immutable basic types (numbers, strings, tuples).  However,\naliasing has a possibly surprising effect on the semantics of Python code\ninvolving mutable objects such as lists, dictionaries, and most other types.\nThis is usually used to the benefit of the program, since aliases behave like\npointers in some respects.  For example, passing an object is cheap since only a\npointer is passed by the implementation; and if a function modifies an object\npassed as an argument, the caller will see the change --- this eliminates the\nneed for two different argument passing mechanisms as in Pascal.\n\nPython Scopes and Namespaces\n\nBefore introducing classes, I first have to tell you something about Python's\nscope rules.  Class definitions play some neat tricks with namespaces, and you\nneed to know how scopes and namespaces work to fully understand what's going on.\nIncidentally, knowledge about this subject is useful for any advanced Python\nprogrammer.\n\nLet's begin with some definitions.\n\nA *namespace* is a mapping from names to objects.  Most namespaces are currently\nimplemented as Python dictionaries, but that's normally not noticeable in any\nway (except for performance), and it may change in the future.  Examples of\nnamespaces are: the set of built-in names (containing functions such as abs, and\nbuilt-in exception names); the global names in a module; and the local names in\na function invocation.  In a sense the set of attributes of an object also form\na namespace.  The important thing to know about namespaces is that there is\nabsolutely no relation between names in different namespaces; for instance, two\ndifferent modules may both define a function maximize without confusion ---\nusers of the modules must prefix it with the module name.\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "A",
+    "page": "classes:003",
+    "anchor": 905,
+    "chunk": {
+      "chunk_id": "5326bf6acd3be45bc1ee8e68966f107410c18a0b691bbbd986046771a5e6473d",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:003",
+      "text": "he module: they share the same namespace!  [#]_\n\nAttributes may be read-only or writable.  In the latter case, assignment to\nattributes is possible.  Module attributes are writable: you can write\nmodname.the_answer = 42.  Writable attributes may also be deleted with the\ndel statement.  For example, del modname.the_answer will remove\nthe attribute the_answer from the object named by modname.\n\nNamespaces are created at different moments and have different lifetimes.  The\nnamespace containing the b",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 4078,
+        "unit_end": 5888,
+        "start_char": 450,
+        "end_char": 950
+      }
+    },
+    "source_text": "By the way, I use the word *attribute* for any name following a dot --- for\nexample, in the expression z.real, real is an attribute of the object\nz.  Strictly speaking, references to names in modules are attribute\nreferences: in the expression modname.funcname, modname is a module\nobject and funcname is an attribute of it.  In this case there happens to be\na straightforward mapping between the module's attributes and the global names\ndefined in the module: they share the same namespace!  [#]_\n\nAttributes may be read-only or writable.  In the latter case, assignment to\nattributes is possible.  Module attributes are writable: you can write\nmodname.the_answer = 42.  Writable attributes may also be deleted with the\ndel statement.  For example, del modname.the_answer will remove\nthe attribute the_answer from the object named by modname.\n\nNamespaces are created at different moments and have different lifetimes.  The\nnamespace containing the built-in names is created when the Python interpreter\nstarts up, and is never deleted.  The global namespace for a module is created\nwhen the module definition is read in; normally, module namespaces also last\nuntil the interpreter quits.  The statements executed by the top-level\ninvocation of the interpreter, either read from a script file or interactively,\nare considered part of a module called __main__, so they have their own\nglobal namespace.  (The built-in names actually also live in a module; this is\ncalled builtins.)\n\nThe local namespace for a function is created when the function is called, and\ndeleted when the function returns or raises an exception that is not handled\nwithin the function.  (Actually, forgetting would be a better way to describe\nwhat actually happens.)  Of course, recursive invocations each have their own\nlocal namespace.\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "B",
+    "page": "classes:003",
+    "anchor": 905,
+    "chunk": {
+      "chunk_id": "ea15d88e3d5dfd92147b8ccb6ac4b8643e6d95f2272c874f18de34f7841777ff",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:003",
+      "text": "Namespaces are created at different moments and have different lifetimes.  The\nnamespace containing the built-in names is created when the Python interpreter\nstarts up, and is never deleted.  The global namespace for a module is created\nwhen the module definition is read in; normally, module namespaces also last\nuntil the interpreter quits.  The statements executed by the top-level\ninvocation of the interpreter, either read from a script file or interactively,\nare considered part of a module called __main__, so they have their own\nglobal namespace.  (The built-in names actually also live in a module; this is\ncalled builtins.)\n\nThe local namespace for a function is created when the function is called, and\ndeleted when the function returns or raises an exception that is not handled\nwithin the function.  (Actually, forgetting would be a better way to describe\nwhat actually happens.)  Of course, recursive invocations each have their own\nlocal namespace.",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 4078,
+        "unit_end": 5888,
+        "start_char": 845,
+        "end_char": 1808
+      }
+    },
+    "source_text": "By the way, I use the word *attribute* for any name following a dot --- for\nexample, in the expression z.real, real is an attribute of the object\nz.  Strictly speaking, references to names in modules are attribute\nreferences: in the expression modname.funcname, modname is a module\nobject and funcname is an attribute of it.  In this case there happens to be\na straightforward mapping between the module's attributes and the global names\ndefined in the module: they share the same namespace!  [#]_\n\nAttributes may be read-only or writable.  In the latter case, assignment to\nattributes is possible.  Module attributes are writable: you can write\nmodname.the_answer = 42.  Writable attributes may also be deleted with the\ndel statement.  For example, del modname.the_answer will remove\nthe attribute the_answer from the object named by modname.\n\nNamespaces are created at different moments and have different lifetimes.  The\nnamespace containing the built-in names is created when the Python interpreter\nstarts up, and is never deleted.  The global namespace for a module is created\nwhen the module definition is read in; normally, module namespaces also last\nuntil the interpreter quits.  The statements executed by the top-level\ninvocation of the interpreter, either read from a script file or interactively,\nare considered part of a module called __main__, so they have their own\nglobal namespace.  (The built-in names actually also live in a module; this is\ncalled builtins.)\n\nThe local namespace for a function is created when the function is called, and\ndeleted when the function returns or raises an exception that is not handled\nwithin the function.  (Actually, forgetting would be a better way to describe\nwhat actually happens.)  Of course, recursive invocations each have their own\nlocal namespace.\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "C",
+    "page": "classes:003",
+    "anchor": 905,
+    "chunk": {
+      "chunk_id": "ea15d88e3d5dfd92147b8ccb6ac4b8643e6d95f2272c874f18de34f7841777ff",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:003",
+      "text": "Namespaces are created at different moments and have different lifetimes.  The\nnamespace containing the built-in names is created when the Python interpreter\nstarts up, and is never deleted.  The global namespace for a module is created\nwhen the module definition is read in; normally, module namespaces also last\nuntil the interpreter quits.  The statements executed by the top-level\ninvocation of the interpreter, either read from a script file or interactively,\nare considered part of a module called __main__, so they have their own\nglobal namespace.  (The built-in names actually also live in a module; this is\ncalled builtins.)\n\nThe local namespace for a function is created when the function is called, and\ndeleted when the function returns or raises an exception that is not handled\nwithin the function.  (Actually, forgetting would be a better way to describe\nwhat actually happens.)  Of course, recursive invocations each have their own\nlocal namespace.",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 4078,
+        "unit_end": 5888,
+        "start_char": 845,
+        "end_char": 1808
+      }
+    },
+    "source_text": "By the way, I use the word *attribute* for any name following a dot --- for\nexample, in the expression z.real, real is an attribute of the object\nz.  Strictly speaking, references to names in modules are attribute\nreferences: in the expression modname.funcname, modname is a module\nobject and funcname is an attribute of it.  In this case there happens to be\na straightforward mapping between the module's attributes and the global names\ndefined in the module: they share the same namespace!  [#]_\n\nAttributes may be read-only or writable.  In the latter case, assignment to\nattributes is possible.  Module attributes are writable: you can write\nmodname.the_answer = 42.  Writable attributes may also be deleted with the\ndel statement.  For example, del modname.the_answer will remove\nthe attribute the_answer from the object named by modname.\n\nNamespaces are created at different moments and have different lifetimes.  The\nnamespace containing the built-in names is created when the Python interpreter\nstarts up, and is never deleted.  The global namespace for a module is created\nwhen the module definition is read in; normally, module namespaces also last\nuntil the interpreter quits.  The statements executed by the top-level\ninvocation of the interpreter, either read from a script file or interactively,\nare considered part of a module called __main__, so they have their own\nglobal namespace.  (The built-in names actually also live in a module; this is\ncalled builtins.)\n\nThe local namespace for a function is created when the function is called, and\ndeleted when the function returns or raises an exception that is not handled\nwithin the function.  (Actually, forgetting would be a better way to describe\nwhat actually happens.)  Of course, recursive invocations each have their own\nlocal namespace.\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "A",
+    "page": "classes:004",
+    "anchor": 987,
+    "chunk": {
+      "chunk_id": "76b7e1a8565e5c064674ab3c1a95f7b0d75dbb3d5795103d8c2ca6fcd33c4d4b",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:004",
+      "text": " To rebind variables\nfound outside of the innermost scope, the nonlocal statement can be\nused; if not declared nonlocal, those variables are read-only (an attempt to\nwrite to such a variable will simply create a *new* local variable in the\ninnermost scope, leaving the identically named outer variable unchanged).\n\nUsually, the local scope references the local names of the (textually) current\nfunction.  Outside functions, the local scope references the same namespace as\nthe global scope: the modul",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 5888,
+        "unit_end": 7863,
+        "start_char": 900,
+        "end_char": 1400
+      }
+    },
+    "source_text": "A *scope* is a textual region of a Python program where a namespace is directly\naccessible.  \"Directly accessible\" here means that an unqualified reference to a\nname attempts to find the name in the namespace.\n\nAlthough scopes are determined statically, they are used dynamically. At any\ntime during execution, there are 3 or 4 nested scopes whose namespaces are\ndirectly accessible:\n\n* the innermost scope, which is searched first, contains the local names\n* the scopes of any enclosing functions, which are searched starting with the\n  nearest enclosing scope, contain non-local, but also non-global names\n* the next-to-last scope contains the current module's global names\n* the outermost scope (searched last) is the namespace containing built-in names\n\nIf a name is declared global, then all references and assignments go directly to\nthe next-to-last scope containing the module's global names.  To rebind variables\nfound outside of the innermost scope, the nonlocal statement can be\nused; if not declared nonlocal, those variables are read-only (an attempt to\nwrite to such a variable will simply create a *new* local variable in the\ninnermost scope, leaving the identically named outer variable unchanged).\n\nUsually, the local scope references the local names of the (textually) current\nfunction.  Outside functions, the local scope references the same namespace as\nthe global scope: the module's namespace. Class definitions place yet another\nnamespace in the local scope.\n\nIt is important to realize that scopes are determined textually: the global\nscope of a function defined in a module is that module's namespace, no matter\nfrom where or by what alias the function is called.  On the other hand, the\nactual search for names is done dynamically, at run time --- however, the\nlanguage definition is evolving towards static name resolution, at \"compile\"\ntime, so don't rely on dynamic name resolution!  (In fact, local variables are\nalready determined statically.)\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "B",
+    "page": "classes:004",
+    "anchor": 987,
+    "chunk": {
+      "chunk_id": "ad6419124bba859bef71582a877d14e72f18c89b18ac62a83d26e4927428dd8c",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:004",
+      "text": "If a name is declared global, then all references and assignments go directly to\nthe next-to-last scope containing the module's global names.  To rebind variables\nfound outside of the innermost scope, the nonlocal statement can be\nused; if not declared nonlocal, those variables are read-only (an attempt to\nwrite to such a variable will simply create a *new* local variable in the\ninnermost scope, leaving the identically named outer variable unchanged).\n\nUsually, the local scope references the local names of the (textually) current\nfunction.  Outside functions, the local scope references the same namespace as\nthe global scope: the module's namespace. Class definitions place yet another\nnamespace in the local scope.",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 5888,
+        "unit_end": 7863,
+        "start_char": 758,
+        "end_char": 1480
+      }
+    },
+    "source_text": "A *scope* is a textual region of a Python program where a namespace is directly\naccessible.  \"Directly accessible\" here means that an unqualified reference to a\nname attempts to find the name in the namespace.\n\nAlthough scopes are determined statically, they are used dynamically. At any\ntime during execution, there are 3 or 4 nested scopes whose namespaces are\ndirectly accessible:\n\n* the innermost scope, which is searched first, contains the local names\n* the scopes of any enclosing functions, which are searched starting with the\n  nearest enclosing scope, contain non-local, but also non-global names\n* the next-to-last scope contains the current module's global names\n* the outermost scope (searched last) is the namespace containing built-in names\n\nIf a name is declared global, then all references and assignments go directly to\nthe next-to-last scope containing the module's global names.  To rebind variables\nfound outside of the innermost scope, the nonlocal statement can be\nused; if not declared nonlocal, those variables are read-only (an attempt to\nwrite to such a variable will simply create a *new* local variable in the\ninnermost scope, leaving the identically named outer variable unchanged).\n\nUsually, the local scope references the local names of the (textually) current\nfunction.  Outside functions, the local scope references the same namespace as\nthe global scope: the module's namespace. Class definitions place yet another\nnamespace in the local scope.\n\nIt is important to realize that scopes are determined textually: the global\nscope of a function defined in a module is that module's namespace, no matter\nfrom where or by what alias the function is called.  On the other hand, the\nactual search for names is done dynamically, at run time --- however, the\nlanguage definition is evolving towards static name resolution, at \"compile\"\ntime, so don't rely on dynamic name resolution!  (In fact, local variables are\nalready determined statically.)\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "C",
+    "page": "classes:004",
+    "anchor": 987,
+    "chunk": {
+      "chunk_id": "ad6419124bba859bef71582a877d14e72f18c89b18ac62a83d26e4927428dd8c",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:004",
+      "text": "If a name is declared global, then all references and assignments go directly to\nthe next-to-last scope containing the module's global names.  To rebind variables\nfound outside of the innermost scope, the nonlocal statement can be\nused; if not declared nonlocal, those variables are read-only (an attempt to\nwrite to such a variable will simply create a *new* local variable in the\ninnermost scope, leaving the identically named outer variable unchanged).\n\nUsually, the local scope references the local names of the (textually) current\nfunction.  Outside functions, the local scope references the same namespace as\nthe global scope: the module's namespace. Class definitions place yet another\nnamespace in the local scope.",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 5888,
+        "unit_end": 7863,
+        "start_char": 758,
+        "end_char": 1480
+      }
+    },
+    "source_text": "A *scope* is a textual region of a Python program where a namespace is directly\naccessible.  \"Directly accessible\" here means that an unqualified reference to a\nname attempts to find the name in the namespace.\n\nAlthough scopes are determined statically, they are used dynamically. At any\ntime during execution, there are 3 or 4 nested scopes whose namespaces are\ndirectly accessible:\n\n* the innermost scope, which is searched first, contains the local names\n* the scopes of any enclosing functions, which are searched starting with the\n  nearest enclosing scope, contain non-local, but also non-global names\n* the next-to-last scope contains the current module's global names\n* the outermost scope (searched last) is the namespace containing built-in names\n\nIf a name is declared global, then all references and assignments go directly to\nthe next-to-last scope containing the module's global names.  To rebind variables\nfound outside of the innermost scope, the nonlocal statement can be\nused; if not declared nonlocal, those variables are read-only (an attempt to\nwrite to such a variable will simply create a *new* local variable in the\ninnermost scope, leaving the identically named outer variable unchanged).\n\nUsually, the local scope references the local names of the (textually) current\nfunction.  Outside functions, the local scope references the same namespace as\nthe global scope: the module's namespace. Class definitions place yet another\nnamespace in the local scope.\n\nIt is important to realize that scopes are determined textually: the global\nscope of a function defined in a module is that module's namespace, no matter\nfrom where or by what alias the function is called.  On the other hand, the\nactual search for names is done dynamically, at run time --- however, the\nlanguage definition is evolving towards static name resolution, at \"compile\"\ntime, so don't rely on dynamic name resolution!  (In fact, local variables are\nalready determined statically.)\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "A",
+    "page": "classes:005",
+    "anchor": 939,
+    "chunk": {
+      "chunk_id": "f56c7ed3e5d37cd59f7707dabba0ef3540fced400e405ffe89e26dda85b1ee5d",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:005",
+      "text": "ction definitions bind the module or function name in the local scope.\n\nThe global statement can be used to indicate that particular\nvariables live in the global scope and should be rebound there; the\nnonlocal statement indicates that particular variables live in\nan enclosing scope and should be rebound there.\n\nScopes and Namespaces Example\n\nThis is an example demonstrating how to reference the different scopes and\nnamespaces, and how global and nonlocal affect variable\nbinding::\n\n   def scope_t",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 7863,
+        "unit_end": 9741,
+        "start_char": 450,
+        "end_char": 950
+      }
+    },
+    "source_text": "A special quirk of Python is that -- if no global or nonlocal\nstatement is in effect -- assignments to names always go into the innermost scope.\nAssignments do not copy data --- they just bind names to objects.  The same is true\nfor deletions: the statement del x removes the binding of x from the\nnamespace referenced by the local scope.  In fact, all operations that introduce\nnew names use the local scope: in particular, import statements and\nfunction definitions bind the module or function name in the local scope.\n\nThe global statement can be used to indicate that particular\nvariables live in the global scope and should be rebound there; the\nnonlocal statement indicates that particular variables live in\nan enclosing scope and should be rebound there.\n\nScopes and Namespaces Example\n\nThis is an example demonstrating how to reference the different scopes and\nnamespaces, and how global and nonlocal affect variable\nbinding::\n\n   def scope_test():\n       def do_local():\n           spam = \"local spam\"\n\n       def do_nonlocal():\n           nonlocal spam\n           spam = \"nonlocal spam\"\n\n       def do_global():\n           global spam\n           spam = \"global spam\"\n\n       spam = \"test spam\"\n       do_local()\n       print(\"After local assignment:\", spam)\n       do_nonlocal()\n       print(\"After nonlocal assignment:\", spam)\n       do_global()\n       print(\"After global assignment:\", spam)\n\n   scope_test()\n   print(\"In global scope:\", spam)\n\nThe output of the example code is:\n\n   After local assignment: test spam\n   After nonlocal assignment: nonlocal spam\n   After global assignment: nonlocal spam\n   In global scope: global spam\n\nNote how the *local* assignment (which is default) didn't change *scope_test*\\'s\nbinding of *spam*.  The nonlocal assignment changed *scope_test*\\'s\nbinding of *spam*, and the global assignment changed the module-level\nbinding.\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "B",
+    "page": "classes:005",
+    "anchor": 939,
+    "chunk": {
+      "chunk_id": "c3e7374f9d03a5f426616e3ae0ec11f048af5cd95f2b308f1fd72aaab6d1a8f2",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:005",
+      "text": "def scope_test():\n       def do_local():\n           spam = \"local spam\"\n\n       def do_nonlocal():\n           nonlocal spam\n           spam = \"nonlocal spam\"\n\n       def do_global():\n           global spam\n           spam = \"global spam\"\n\n       spam = \"test spam\"\n       do_local()\n       print(\"After local assignment:\", spam)\n       do_nonlocal()\n       print(\"After nonlocal assignment:\", spam)\n       do_global()\n       print(\"After global assignment:\", spam)\n\n   scope_test()\n   print(\"In global scope:\", spam)\n\nThe output of the example code is:\n\n   After local assignment: test spam\n   After nonlocal assignment: nonlocal spam\n   After global assignment: nonlocal spam\n   In global scope: global spam\n\nNote how the *local* assignment (which is default) didn't change *scope_test*\\'s\nbinding of *spam*.  The nonlocal assignment changed *scope_test*\\'s\nbinding of *spam*, and the global assignment changed the module-level\nbinding.",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 7863,
+        "unit_end": 9741,
+        "start_char": 939,
+        "end_char": 1876
+      }
+    },
+    "source_text": "A special quirk of Python is that -- if no global or nonlocal\nstatement is in effect -- assignments to names always go into the innermost scope.\nAssignments do not copy data --- they just bind names to objects.  The same is true\nfor deletions: the statement del x removes the binding of x from the\nnamespace referenced by the local scope.  In fact, all operations that introduce\nnew names use the local scope: in particular, import statements and\nfunction definitions bind the module or function name in the local scope.\n\nThe global statement can be used to indicate that particular\nvariables live in the global scope and should be rebound there; the\nnonlocal statement indicates that particular variables live in\nan enclosing scope and should be rebound there.\n\nScopes and Namespaces Example\n\nThis is an example demonstrating how to reference the different scopes and\nnamespaces, and how global and nonlocal affect variable\nbinding::\n\n   def scope_test():\n       def do_local():\n           spam = \"local spam\"\n\n       def do_nonlocal():\n           nonlocal spam\n           spam = \"nonlocal spam\"\n\n       def do_global():\n           global spam\n           spam = \"global spam\"\n\n       spam = \"test spam\"\n       do_local()\n       print(\"After local assignment:\", spam)\n       do_nonlocal()\n       print(\"After nonlocal assignment:\", spam)\n       do_global()\n       print(\"After global assignment:\", spam)\n\n   scope_test()\n   print(\"In global scope:\", spam)\n\nThe output of the example code is:\n\n   After local assignment: test spam\n   After nonlocal assignment: nonlocal spam\n   After global assignment: nonlocal spam\n   In global scope: global spam\n\nNote how the *local* assignment (which is default) didn't change *scope_test*\\'s\nbinding of *spam*.  The nonlocal assignment changed *scope_test*\\'s\nbinding of *spam*, and the global assignment changed the module-level\nbinding.\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "C",
+    "page": "classes:005",
+    "anchor": 939,
+    "chunk": {
+      "chunk_id": "c3e7374f9d03a5f426616e3ae0ec11f048af5cd95f2b308f1fd72aaab6d1a8f2",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:005",
+      "text": "def scope_test():\n       def do_local():\n           spam = \"local spam\"\n\n       def do_nonlocal():\n           nonlocal spam\n           spam = \"nonlocal spam\"\n\n       def do_global():\n           global spam\n           spam = \"global spam\"\n\n       spam = \"test spam\"\n       do_local()\n       print(\"After local assignment:\", spam)\n       do_nonlocal()\n       print(\"After nonlocal assignment:\", spam)\n       do_global()\n       print(\"After global assignment:\", spam)\n\n   scope_test()\n   print(\"In global scope:\", spam)\n\nThe output of the example code is:\n\n   After local assignment: test spam\n   After nonlocal assignment: nonlocal spam\n   After global assignment: nonlocal spam\n   In global scope: global spam\n\nNote how the *local* assignment (which is default) didn't change *scope_test*\\'s\nbinding of *spam*.  The nonlocal assignment changed *scope_test*\\'s\nbinding of *spam*, and the global assignment changed the module-level\nbinding.",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 7863,
+        "unit_end": 9741,
+        "start_char": 939,
+        "end_char": 1876
+      }
+    },
+    "source_text": "A special quirk of Python is that -- if no global or nonlocal\nstatement is in effect -- assignments to names always go into the innermost scope.\nAssignments do not copy data --- they just bind names to objects.  The same is true\nfor deletions: the statement del x removes the binding of x from the\nnamespace referenced by the local scope.  In fact, all operations that introduce\nnew names use the local scope: in particular, import statements and\nfunction definitions bind the module or function name in the local scope.\n\nThe global statement can be used to indicate that particular\nvariables live in the global scope and should be rebound there; the\nnonlocal statement indicates that particular variables live in\nan enclosing scope and should be rebound there.\n\nScopes and Namespaces Example\n\nThis is an example demonstrating how to reference the different scopes and\nnamespaces, and how global and nonlocal affect variable\nbinding::\n\n   def scope_test():\n       def do_local():\n           spam = \"local spam\"\n\n       def do_nonlocal():\n           nonlocal spam\n           spam = \"nonlocal spam\"\n\n       def do_global():\n           global spam\n           spam = \"global spam\"\n\n       spam = \"test spam\"\n       do_local()\n       print(\"After local assignment:\", spam)\n       do_nonlocal()\n       print(\"After nonlocal assignment:\", spam)\n       do_global()\n       print(\"After global assignment:\", spam)\n\n   scope_test()\n   print(\"In global scope:\", spam)\n\nThe output of the example code is:\n\n   After local assignment: test spam\n   After nonlocal assignment: nonlocal spam\n   After global assignment: nonlocal spam\n   In global scope: global spam\n\nNote how the *local* assignment (which is default) didn't change *scope_test*\\'s\nbinding of *spam*.  The nonlocal assignment changed *scope_test*\\'s\nbinding of *spam*, and the global assignment changed the module-level\nbinding.\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "A",
+    "page": "classes:006",
+    "anchor": 1015,
+    "chunk": {
+      "chunk_id": "76ad00ce776eac760fe48016bc342d169052d2f04487244663c8573041edf034",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:006",
+      "text": "tions for\nmethods --- again, this is explained later.\n\nWhen a class definition is entered, a new namespace is created, and used as the\nlocal scope --- thus, all assignments to local variables go into this new\nnamespace.  In particular, function definitions bind the name of the new\nfunction here.\n\nWhen a class definition is left normally (via the end), a *class object* is\ncreated.  This is basically a wrapper around the contents of the namespace\ncreated by the class definition; we'll learn more a",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 9741,
+        "unit_end": 11771,
+        "start_char": 900,
+        "end_char": 1400
+      }
+    },
+    "source_text": "You can also see that there was no previous binding for *spam* before the\nglobal assignment.\n\nA First Look at Classes\n\nClasses introduce a little bit of new syntax, three new object types, and some\nnew semantics.\n\nClass Definition Syntax\n\nThe simplest form of class definition looks like this::\n\n   class ClassName:\n       <statement-1>\n       .\n       .\n       .\n       <statement-N>\n\nClass definitions, like function definitions (def statements) must be\nexecuted before they have any effect.  (You could conceivably place a class\ndefinition in a branch of an if statement, or inside a function.)\n\nIn practice, the statements inside a class definition will usually be function\ndefinitions, but other statements are allowed, and sometimes useful --- we'll\ncome back to this later.  The function definitions inside a class normally have\na peculiar form of argument list, dictated by the calling conventions for\nmethods --- again, this is explained later.\n\nWhen a class definition is entered, a new namespace is created, and used as the\nlocal scope --- thus, all assignments to local variables go into this new\nnamespace.  In particular, function definitions bind the name of the new\nfunction here.\n\nWhen a class definition is left normally (via the end), a *class object* is\ncreated.  This is basically a wrapper around the contents of the namespace\ncreated by the class definition; we'll learn more about class objects in the\nnext section.  The original local scope (the one in effect just before the class\ndefinition was entered) is reinstated, and the class object is bound here to the\nclass name given in the class definition header (ClassName in the\nexample).\n\nClass Objects\n\nClass objects support two kinds of operations: attribute references and\ninstantiation.\n\n*Attribute references* use the standard syntax used for all attribute references\nin Python: obj.name.  Valid attribute names are all the names that were in\nthe class's namespace when the class object was created.  So, if the class\ndefinition looked like this::\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "B",
+    "page": "classes:006",
+    "anchor": 1015,
+    "chunk": {
+      "chunk_id": "31040da591c3962e8e541d20aefec88afa575527ebd6ab128846e065cbbc52cc",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:006",
+      "text": "When a class definition is entered, a new namespace is created, and used as the\nlocal scope --- thus, all assignments to local variables go into this new\nnamespace.  In particular, function definitions bind the name of the new\nfunction here.\n\nWhen a class definition is left normally (via the end), a *class object* is\ncreated.  This is basically a wrapper around the contents of the namespace\ncreated by the class definition; we'll learn more about class objects in the\nnext section.  The original local scope (the one in effect just before the class\ndefinition was entered) is reinstated, and the class object is bound here to the\nclass name given in the class definition header (ClassName in the\nexample).\n\nClass Objects\n\nClass objects support two kinds of operations: attribute references and\ninstantiation.",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 9741,
+        "unit_end": 11771,
+        "start_char": 955,
+        "end_char": 1766
+      }
+    },
+    "source_text": "You can also see that there was no previous binding for *spam* before the\nglobal assignment.\n\nA First Look at Classes\n\nClasses introduce a little bit of new syntax, three new object types, and some\nnew semantics.\n\nClass Definition Syntax\n\nThe simplest form of class definition looks like this::\n\n   class ClassName:\n       <statement-1>\n       .\n       .\n       .\n       <statement-N>\n\nClass definitions, like function definitions (def statements) must be\nexecuted before they have any effect.  (You could conceivably place a class\ndefinition in a branch of an if statement, or inside a function.)\n\nIn practice, the statements inside a class definition will usually be function\ndefinitions, but other statements are allowed, and sometimes useful --- we'll\ncome back to this later.  The function definitions inside a class normally have\na peculiar form of argument list, dictated by the calling conventions for\nmethods --- again, this is explained later.\n\nWhen a class definition is entered, a new namespace is created, and used as the\nlocal scope --- thus, all assignments to local variables go into this new\nnamespace.  In particular, function definitions bind the name of the new\nfunction here.\n\nWhen a class definition is left normally (via the end), a *class object* is\ncreated.  This is basically a wrapper around the contents of the namespace\ncreated by the class definition; we'll learn more about class objects in the\nnext section.  The original local scope (the one in effect just before the class\ndefinition was entered) is reinstated, and the class object is bound here to the\nclass name given in the class definition header (ClassName in the\nexample).\n\nClass Objects\n\nClass objects support two kinds of operations: attribute references and\ninstantiation.\n\n*Attribute references* use the standard syntax used for all attribute references\nin Python: obj.name.  Valid attribute names are all the names that were in\nthe class's namespace when the class object was created.  So, if the class\ndefinition looked like this::\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "C",
+    "page": "classes:006",
+    "anchor": 1015,
+    "chunk": {
+      "chunk_id": "31040da591c3962e8e541d20aefec88afa575527ebd6ab128846e065cbbc52cc",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:006",
+      "text": "When a class definition is entered, a new namespace is created, and used as the\nlocal scope --- thus, all assignments to local variables go into this new\nnamespace.  In particular, function definitions bind the name of the new\nfunction here.\n\nWhen a class definition is left normally (via the end), a *class object* is\ncreated.  This is basically a wrapper around the contents of the namespace\ncreated by the class definition; we'll learn more about class objects in the\nnext section.  The original local scope (the one in effect just before the class\ndefinition was entered) is reinstated, and the class object is bound here to the\nclass name given in the class definition header (ClassName in the\nexample).\n\nClass Objects\n\nClass objects support two kinds of operations: attribute references and\ninstantiation.",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 9741,
+        "unit_end": 11771,
+        "start_char": 955,
+        "end_char": 1766
+      }
+    },
+    "source_text": "You can also see that there was no previous binding for *spam* before the\nglobal assignment.\n\nA First Look at Classes\n\nClasses introduce a little bit of new syntax, three new object types, and some\nnew semantics.\n\nClass Definition Syntax\n\nThe simplest form of class definition looks like this::\n\n   class ClassName:\n       <statement-1>\n       .\n       .\n       .\n       <statement-N>\n\nClass definitions, like function definitions (def statements) must be\nexecuted before they have any effect.  (You could conceivably place a class\ndefinition in a branch of an if statement, or inside a function.)\n\nIn practice, the statements inside a class definition will usually be function\ndefinitions, but other statements are allowed, and sometimes useful --- we'll\ncome back to this later.  The function definitions inside a class normally have\na peculiar form of argument list, dictated by the calling conventions for\nmethods --- again, this is explained later.\n\nWhen a class definition is entered, a new namespace is created, and used as the\nlocal scope --- thus, all assignments to local variables go into this new\nnamespace.  In particular, function definitions bind the name of the new\nfunction here.\n\nWhen a class definition is left normally (via the end), a *class object* is\ncreated.  This is basically a wrapper around the contents of the namespace\ncreated by the class definition; we'll learn more about class objects in the\nnext section.  The original local scope (the one in effect just before the class\ndefinition was entered) is reinstated, and the class object is bound here to the\nclass name given in the class definition header (ClassName in the\nexample).\n\nClass Objects\n\nClass objects support two kinds of operations: attribute references and\ninstantiation.\n\n*Attribute references* use the standard syntax used for all attribute references\nin Python: obj.name.  Valid attribute names are all the names that were in\nthe class's namespace when the class object was created.  So, if the class\ndefinition looked like this::\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "A",
+    "page": "classes:007",
+    "anchor": 949,
+    "chunk": {
+      "chunk_id": "88a2a3f885056ceb694daec601daad35a08a7ba83b2f46871c0b6168efb35ece",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:007",
+      "text": "ass\".\n\nClass *instantiation* uses function notation.  Just pretend that the class\nobject is a parameterless function that returns a new instance of the class.\nFor example (assuming the above class)::\n\n   x = MyClass()\n\ncreates a new *instance* of the class and assigns this object to the local\nvariable x.\n\nThe instantiation operation (\"calling\" a class object) creates an empty object.\nMany classes like to create objects with instances customized to a specific\ninitial state. Therefore a class may ",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 11771,
+        "unit_end": 13670,
+        "start_char": 450,
+        "end_char": 950
+      }
+    },
+    "source_text": "   class MyClass:\n       \"\"\"A simple example class\"\"\"\n       i = 12345\n\n       def f(self):\n           return 'hello world'\n\nthen MyClass.i and MyClass.f are valid attribute references, returning\nan integer and a function object, respectively. Class attributes can also be\nassigned to, so you can change the value of MyClass.i by assignment.\ntype.__doc__ is also a valid attribute, returning the docstring\nbelonging to the class: \"A simple example class\".\n\nClass *instantiation* uses function notation.  Just pretend that the class\nobject is a parameterless function that returns a new instance of the class.\nFor example (assuming the above class)::\n\n   x = MyClass()\n\ncreates a new *instance* of the class and assigns this object to the local\nvariable x.\n\nThe instantiation operation (\"calling\" a class object) creates an empty object.\nMany classes like to create objects with instances customized to a specific\ninitial state. Therefore a class may define a special method named\nobject.__init__, like this::\n\n   def __init__(self):\n       self.data = []\n\nWhen a class defines an object.__init__ method, class instantiation\nautomatically invokes __init__ for the newly created class instance.  So\nin this example, a new, initialized instance can be obtained by::\n\n   x = MyClass()\n\nOf course, the object.__init__ method may have arguments for greater\nflexibility.  In that case, arguments given to the class instantiation operator\nare passed on to __init__.  For example, ::\n\n   >>> class Complex:\n   ...     def __init__(self, realpart, imagpart):\n   ...         self.r = realpart\n   ...         self.i = imagpart\n   ...\n   >>> x = Complex(3.0, -4.5)\n   >>> x.r, x.i\n   (3.0, -4.5)\n\nInstance Objects\n\nNow what can we do with instance objects?  The only operations understood by\ninstance objects are attribute references.  There are two kinds of valid\nattribute names: data attributes and methods.\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "B",
+    "page": "classes:007",
+    "anchor": 949,
+    "chunk": {
+      "chunk_id": "6204af87d7ba34c2ab3eb9e22516e0b355db6358e94436111ffca3417a676736",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:007",
+      "text": "The instantiation operation (\"calling\" a class object) creates an empty object.\nMany classes like to create objects with instances customized to a specific\ninitial state. Therefore a class may define a special method named\nobject.__init__, like this::\n\n   def __init__(self):\n       self.data = []\n\nWhen a class defines an object.__init__ method, class instantiation\nautomatically invokes __init__ for the newly created class instance.  So\nin this example, a new, initialized instance can be obtained by::\n\n   x = MyClass()\n\nOf course, the object.__init__ method may have arguments for greater\nflexibility.  In that case, arguments given to the class instantiation operator\nare passed on to __init__.  For example, ::\n\n   >>> class Complex:\n   ...     def __init__(self, realpart, imagpart):\n   ...         self.r = realpart\n   ...         self.i = imagpart\n   ...\n   >>> x = Complex(3.0, -4.5)\n   >>> x.r, x.i\n   (3.0, -4.5)\n\nInstance Objects",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 11771,
+        "unit_end": 13670,
+        "start_char": 757,
+        "end_char": 1700
+      }
+    },
+    "source_text": "   class MyClass:\n       \"\"\"A simple example class\"\"\"\n       i = 12345\n\n       def f(self):\n           return 'hello world'\n\nthen MyClass.i and MyClass.f are valid attribute references, returning\nan integer and a function object, respectively. Class attributes can also be\nassigned to, so you can change the value of MyClass.i by assignment.\ntype.__doc__ is also a valid attribute, returning the docstring\nbelonging to the class: \"A simple example class\".\n\nClass *instantiation* uses function notation.  Just pretend that the class\nobject is a parameterless function that returns a new instance of the class.\nFor example (assuming the above class)::\n\n   x = MyClass()\n\ncreates a new *instance* of the class and assigns this object to the local\nvariable x.\n\nThe instantiation operation (\"calling\" a class object) creates an empty object.\nMany classes like to create objects with instances customized to a specific\ninitial state. Therefore a class may define a special method named\nobject.__init__, like this::\n\n   def __init__(self):\n       self.data = []\n\nWhen a class defines an object.__init__ method, class instantiation\nautomatically invokes __init__ for the newly created class instance.  So\nin this example, a new, initialized instance can be obtained by::\n\n   x = MyClass()\n\nOf course, the object.__init__ method may have arguments for greater\nflexibility.  In that case, arguments given to the class instantiation operator\nare passed on to __init__.  For example, ::\n\n   >>> class Complex:\n   ...     def __init__(self, realpart, imagpart):\n   ...         self.r = realpart\n   ...         self.i = imagpart\n   ...\n   >>> x = Complex(3.0, -4.5)\n   >>> x.r, x.i\n   (3.0, -4.5)\n\nInstance Objects\n\nNow what can we do with instance objects?  The only operations understood by\ninstance objects are attribute references.  There are two kinds of valid\nattribute names: data attributes and methods.\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "C",
+    "page": "classes:007",
+    "anchor": 949,
+    "chunk": {
+      "chunk_id": "6204af87d7ba34c2ab3eb9e22516e0b355db6358e94436111ffca3417a676736",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:007",
+      "text": "The instantiation operation (\"calling\" a class object) creates an empty object.\nMany classes like to create objects with instances customized to a specific\ninitial state. Therefore a class may define a special method named\nobject.__init__, like this::\n\n   def __init__(self):\n       self.data = []\n\nWhen a class defines an object.__init__ method, class instantiation\nautomatically invokes __init__ for the newly created class instance.  So\nin this example, a new, initialized instance can be obtained by::\n\n   x = MyClass()\n\nOf course, the object.__init__ method may have arguments for greater\nflexibility.  In that case, arguments given to the class instantiation operator\nare passed on to __init__.  For example, ::\n\n   >>> class Complex:\n   ...     def __init__(self, realpart, imagpart):\n   ...         self.r = realpart\n   ...         self.i = imagpart\n   ...\n   >>> x = Complex(3.0, -4.5)\n   >>> x.r, x.i\n   (3.0, -4.5)\n\nInstance Objects",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 11771,
+        "unit_end": 13670,
+        "start_char": 757,
+        "end_char": 1700
+      }
+    },
+    "source_text": "   class MyClass:\n       \"\"\"A simple example class\"\"\"\n       i = 12345\n\n       def f(self):\n           return 'hello world'\n\nthen MyClass.i and MyClass.f are valid attribute references, returning\nan integer and a function object, respectively. Class attributes can also be\nassigned to, so you can change the value of MyClass.i by assignment.\ntype.__doc__ is also a valid attribute, returning the docstring\nbelonging to the class: \"A simple example class\".\n\nClass *instantiation* uses function notation.  Just pretend that the class\nobject is a parameterless function that returns a new instance of the class.\nFor example (assuming the above class)::\n\n   x = MyClass()\n\ncreates a new *instance* of the class and assigns this object to the local\nvariable x.\n\nThe instantiation operation (\"calling\" a class object) creates an empty object.\nMany classes like to create objects with instances customized to a specific\ninitial state. Therefore a class may define a special method named\nobject.__init__, like this::\n\n   def __init__(self):\n       self.data = []\n\nWhen a class defines an object.__init__ method, class instantiation\nautomatically invokes __init__ for the newly created class instance.  So\nin this example, a new, initialized instance can be obtained by::\n\n   x = MyClass()\n\nOf course, the object.__init__ method may have arguments for greater\nflexibility.  In that case, arguments given to the class instantiation operator\nare passed on to __init__.  For example, ::\n\n   >>> class Complex:\n   ...     def __init__(self, realpart, imagpart):\n   ...         self.r = realpart\n   ...         self.i = imagpart\n   ...\n   >>> x = Complex(3.0, -4.5)\n   >>> x.r, x.i\n   (3.0, -4.5)\n\nInstance Objects\n\nNow what can we do with instance objects?  The only operations understood by\ninstance objects are attribute references.  There are two kinds of valid\nattribute names: data attributes and methods.\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "A",
+    "page": "classes:008",
+    "anchor": 1096,
+    "chunk": {
+      "chunk_id": "ebdf48ab145313c494010a18b6f1f2b2a359bc6bf754c39e5d1481c6c9baeca8",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:008",
+      "text": " not the same thing as MyClass.f --- it\nis a *method object*, not a function object.\n\nMethod Objects\n\nUsually, a method is called right after it is bound::\n\n   x.f()\n\nIn the MyClass example, this will return the string 'hello world'.\nHowever, it is not necessary to call a method right away: x.f is a method\nobject, and can be stored away and called at a later time.  For example::\n\n   xf = x.f\n   while True:\n       print(xf())\n\nwill continue to print hello world until the end of time.\n\nWhat exactl",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 13670,
+        "unit_end": 15862,
+        "start_char": 900,
+        "end_char": 1400
+      }
+    },
+    "source_text": "*data attributes* correspond to \"instance variables\" in Smalltalk, and to \"data\nmembers\" in C++.  Data attributes need not be declared; like local variables,\nthey spring into existence when they are first assigned to.  For example, if\nx is the instance of MyClass created above, the following piece of\ncode will print the value 16, without leaving a trace::\n\n   x.counter = 1\n   while x.counter < 10:\n       x.counter = x.counter * 2\n   print(x.counter)\n   del x.counter\n\nThe other kind of instance attribute reference is a *method*. A method is a\nfunction that \"belongs to\" an object.\n\nValid method names of an instance object depend on its class.  By definition,\nall attributes of a class that are function  objects define corresponding\nmethods of its instances.  So in our example, x.f is a valid method\nreference, since MyClass.f is a function, but x.i is not, since\nMyClass.i is not.  But x.f is not the same thing as MyClass.f --- it\nis a *method object*, not a function object.\n\nMethod Objects\n\nUsually, a method is called right after it is bound::\n\n   x.f()\n\nIn the MyClass example, this will return the string 'hello world'.\nHowever, it is not necessary to call a method right away: x.f is a method\nobject, and can be stored away and called at a later time.  For example::\n\n   xf = x.f\n   while True:\n       print(xf())\n\nwill continue to print hello world until the end of time.\n\nWhat exactly happens when a method is called?  You may have noticed that\nx.f() was called without an argument above, even though the function\ndefinition for f specified an argument.  What happened to the argument?\nSurely Python raises an exception when a function that requires an argument is\ncalled without any --- even if the argument isn't actually used...\n\nActually, you may have guessed the answer: the special thing about methods is\nthat the instance object is passed as the first argument of the function.  In our\nexample, the call x.f() is exactly equivalent to MyClass.f(x).  In\ngeneral, calling a method with a list of *n* arguments is equivalent to calling\nthe corresponding function with an argument list that is created by inserting\nthe method's instance object before the first argument.\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "B",
+    "page": "classes:008",
+    "anchor": 1096,
+    "chunk": {
+      "chunk_id": "2aaba5f0884adfa5fb678002901121fb970a90d8a1b19f400a896ed6f1305012",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:008",
+      "text": "Usually, a method is called right after it is bound::\n\n   x.f()\n\nIn the MyClass example, this will return the string 'hello world'.\nHowever, it is not necessary to call a method right away: x.f is a method\nobject, and can be stored away and called at a later time.  For example::\n\n   xf = x.f\n   while True:\n       print(xf())\n\nwill continue to print hello world until the end of time.\n\nWhat exactly happens when a method is called?  You may have noticed that\nx.f() was called without an argument above, even though the function\ndefinition for f specified an argument.  What happened to the argument?\nSurely Python raises an exception when a function that requires an argument is\ncalled without any --- even if the argument isn't actually used...",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 13670,
+        "unit_end": 15862,
+        "start_char": 1002,
+        "end_char": 1748
+      }
+    },
+    "source_text": "*data attributes* correspond to \"instance variables\" in Smalltalk, and to \"data\nmembers\" in C++.  Data attributes need not be declared; like local variables,\nthey spring into existence when they are first assigned to.  For example, if\nx is the instance of MyClass created above, the following piece of\ncode will print the value 16, without leaving a trace::\n\n   x.counter = 1\n   while x.counter < 10:\n       x.counter = x.counter * 2\n   print(x.counter)\n   del x.counter\n\nThe other kind of instance attribute reference is a *method*. A method is a\nfunction that \"belongs to\" an object.\n\nValid method names of an instance object depend on its class.  By definition,\nall attributes of a class that are function  objects define corresponding\nmethods of its instances.  So in our example, x.f is a valid method\nreference, since MyClass.f is a function, but x.i is not, since\nMyClass.i is not.  But x.f is not the same thing as MyClass.f --- it\nis a *method object*, not a function object.\n\nMethod Objects\n\nUsually, a method is called right after it is bound::\n\n   x.f()\n\nIn the MyClass example, this will return the string 'hello world'.\nHowever, it is not necessary to call a method right away: x.f is a method\nobject, and can be stored away and called at a later time.  For example::\n\n   xf = x.f\n   while True:\n       print(xf())\n\nwill continue to print hello world until the end of time.\n\nWhat exactly happens when a method is called?  You may have noticed that\nx.f() was called without an argument above, even though the function\ndefinition for f specified an argument.  What happened to the argument?\nSurely Python raises an exception when a function that requires an argument is\ncalled without any --- even if the argument isn't actually used...\n\nActually, you may have guessed the answer: the special thing about methods is\nthat the instance object is passed as the first argument of the function.  In our\nexample, the call x.f() is exactly equivalent to MyClass.f(x).  In\ngeneral, calling a method with a list of *n* arguments is equivalent to calling\nthe corresponding function with an argument list that is created by inserting\nthe method's instance object before the first argument.\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "C",
+    "page": "classes:008",
+    "anchor": 1096,
+    "chunk": {
+      "chunk_id": "2aaba5f0884adfa5fb678002901121fb970a90d8a1b19f400a896ed6f1305012",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:008",
+      "text": "Usually, a method is called right after it is bound::\n\n   x.f()\n\nIn the MyClass example, this will return the string 'hello world'.\nHowever, it is not necessary to call a method right away: x.f is a method\nobject, and can be stored away and called at a later time.  For example::\n\n   xf = x.f\n   while True:\n       print(xf())\n\nwill continue to print hello world until the end of time.\n\nWhat exactly happens when a method is called?  You may have noticed that\nx.f() was called without an argument above, even though the function\ndefinition for f specified an argument.  What happened to the argument?\nSurely Python raises an exception when a function that requires an argument is\ncalled without any --- even if the argument isn't actually used...",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 13670,
+        "unit_end": 15862,
+        "start_char": 1002,
+        "end_char": 1748
+      }
+    },
+    "source_text": "*data attributes* correspond to \"instance variables\" in Smalltalk, and to \"data\nmembers\" in C++.  Data attributes need not be declared; like local variables,\nthey spring into existence when they are first assigned to.  For example, if\nx is the instance of MyClass created above, the following piece of\ncode will print the value 16, without leaving a trace::\n\n   x.counter = 1\n   while x.counter < 10:\n       x.counter = x.counter * 2\n   print(x.counter)\n   del x.counter\n\nThe other kind of instance attribute reference is a *method*. A method is a\nfunction that \"belongs to\" an object.\n\nValid method names of an instance object depend on its class.  By definition,\nall attributes of a class that are function  objects define corresponding\nmethods of its instances.  So in our example, x.f is a valid method\nreference, since MyClass.f is a function, but x.i is not, since\nMyClass.i is not.  But x.f is not the same thing as MyClass.f --- it\nis a *method object*, not a function object.\n\nMethod Objects\n\nUsually, a method is called right after it is bound::\n\n   x.f()\n\nIn the MyClass example, this will return the string 'hello world'.\nHowever, it is not necessary to call a method right away: x.f is a method\nobject, and can be stored away and called at a later time.  For example::\n\n   xf = x.f\n   while True:\n       print(xf())\n\nwill continue to print hello world until the end of time.\n\nWhat exactly happens when a method is called?  You may have noticed that\nx.f() was called without an argument above, even though the function\ndefinition for f specified an argument.  What happened to the argument?\nSurely Python raises an exception when a function that requires an argument is\ncalled without any --- even if the argument isn't actually used...\n\nActually, you may have guessed the answer: the special thing about methods is\nthat the instance object is passed as the first argument of the function.  In our\nexample, the call x.f() is exactly equivalent to MyClass.f(x).  In\ngeneral, calling a method with a list of *n* arguments is equivalent to calling\nthe corresponding function with an argument list that is created by inserting\nthe method's instance object before the first argument.\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "A",
+    "page": "classes:009",
+    "anchor": 965,
+    "chunk": {
+      "chunk_id": "875dcb18b1ec577999a9a3dfb706261d854b44e9c1bd09d27e2ca848ac7af7b7",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:009",
+      "text": " >>> d = Dog('Fido')\n    >>> e = Dog('Buddy')\n    >>> d.kind                  # shared by all dogs\n    'canine'\n    >>> e.kind                  # shared by all dogs\n    'canine'\n    >>> d.name                  # unique to d\n    'Fido'\n    >>> e.name                  # unique to e\n    'Buddy'\n\nAs discussed in tut-object, shared data can have possibly surprising\neffects with involving mutable objects such as lists and dictionaries.\nFor example, the *tricks* list in the following code should not be",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 15862,
+        "unit_end": 17793,
+        "start_char": 900,
+        "end_char": 1400
+      }
+    },
+    "source_text": "In general, methods work as follows.  When a non-data attribute\nof an instance is referenced, the instance's class is searched.\nIf the name denotes a valid class attribute that is a function object,\nreferences to both the instance object and the function object\nare packed into a method object.  When the method object is called\nwith an argument list, a new argument list is constructed from the instance\nobject and the argument list, and the function object is called with this new\nargument list.\n\nClass and Instance Variables\n\nGenerally speaking, instance variables are for data unique to each instance\nand class variables are for attributes and methods shared by all instances\nof the class::\n\n    class Dog:\n\n        kind = 'canine'         # class variable shared by all instances\n\n        def __init__(self, name):\n            self.name = name    # instance variable unique to each instance\n\n    >>> d = Dog('Fido')\n    >>> e = Dog('Buddy')\n    >>> d.kind                  # shared by all dogs\n    'canine'\n    >>> e.kind                  # shared by all dogs\n    'canine'\n    >>> d.name                  # unique to d\n    'Fido'\n    >>> e.name                  # unique to e\n    'Buddy'\n\nAs discussed in tut-object, shared data can have possibly surprising\neffects with involving mutable objects such as lists and dictionaries.\nFor example, the *tricks* list in the following code should not be used as a\nclass variable because just a single list would be shared by all *Dog*\ninstances::\n\n    class Dog:\n\n        tricks = []             # mistaken use of a class variable\n\n        def __init__(self, name):\n            self.name = name\n\n        def add_trick(self, trick):\n            self.tricks.append(trick)\n\n    >>> d = Dog('Fido')\n    >>> e = Dog('Buddy')\n    >>> d.add_trick('roll over')\n    >>> e.add_trick('play dead')\n    >>> d.tricks                # unexpectedly shared by all dogs\n    ['roll over', 'play dead']\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "B",
+    "page": "classes:009",
+    "anchor": 965,
+    "chunk": {
+      "chunk_id": "88dfd58d0907e822d2f27983beb310d4460908d5c7776bba6385e0c830bf1b74",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:009",
+      "text": ">>> d = Dog('Fido')\n    >>> e = Dog('Buddy')\n    >>> d.kind                  # shared by all dogs\n    'canine'\n    >>> e.kind                  # shared by all dogs\n    'canine'\n    >>> d.name                  # unique to d\n    'Fido'\n    >>> e.name                  # unique to e\n    'Buddy'\n\nAs discussed in tut-object, shared data can have possibly surprising\neffects with involving mutable objects such as lists and dictionaries.\nFor example, the *tricks* list in the following code should not be used as a\nclass variable because just a single list would be shared by all *Dog*\ninstances::\n\n    class Dog:\n\n        tricks = []             # mistaken use of a class variable\n\n        def __init__(self, name):\n            self.name = name\n\n        def add_trick(self, trick):\n            self.tricks.append(trick)",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 15862,
+        "unit_end": 17793,
+        "start_char": 901,
+        "end_char": 1716
+      }
+    },
+    "source_text": "In general, methods work as follows.  When a non-data attribute\nof an instance is referenced, the instance's class is searched.\nIf the name denotes a valid class attribute that is a function object,\nreferences to both the instance object and the function object\nare packed into a method object.  When the method object is called\nwith an argument list, a new argument list is constructed from the instance\nobject and the argument list, and the function object is called with this new\nargument list.\n\nClass and Instance Variables\n\nGenerally speaking, instance variables are for data unique to each instance\nand class variables are for attributes and methods shared by all instances\nof the class::\n\n    class Dog:\n\n        kind = 'canine'         # class variable shared by all instances\n\n        def __init__(self, name):\n            self.name = name    # instance variable unique to each instance\n\n    >>> d = Dog('Fido')\n    >>> e = Dog('Buddy')\n    >>> d.kind                  # shared by all dogs\n    'canine'\n    >>> e.kind                  # shared by all dogs\n    'canine'\n    >>> d.name                  # unique to d\n    'Fido'\n    >>> e.name                  # unique to e\n    'Buddy'\n\nAs discussed in tut-object, shared data can have possibly surprising\neffects with involving mutable objects such as lists and dictionaries.\nFor example, the *tricks* list in the following code should not be used as a\nclass variable because just a single list would be shared by all *Dog*\ninstances::\n\n    class Dog:\n\n        tricks = []             # mistaken use of a class variable\n\n        def __init__(self, name):\n            self.name = name\n\n        def add_trick(self, trick):\n            self.tricks.append(trick)\n\n    >>> d = Dog('Fido')\n    >>> e = Dog('Buddy')\n    >>> d.add_trick('roll over')\n    >>> e.add_trick('play dead')\n    >>> d.tricks                # unexpectedly shared by all dogs\n    ['roll over', 'play dead']\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "C",
+    "page": "classes:009",
+    "anchor": 965,
+    "chunk": {
+      "chunk_id": "88dfd58d0907e822d2f27983beb310d4460908d5c7776bba6385e0c830bf1b74",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:009",
+      "text": ">>> d = Dog('Fido')\n    >>> e = Dog('Buddy')\n    >>> d.kind                  # shared by all dogs\n    'canine'\n    >>> e.kind                  # shared by all dogs\n    'canine'\n    >>> d.name                  # unique to d\n    'Fido'\n    >>> e.name                  # unique to e\n    'Buddy'\n\nAs discussed in tut-object, shared data can have possibly surprising\neffects with involving mutable objects such as lists and dictionaries.\nFor example, the *tricks* list in the following code should not be used as a\nclass variable because just a single list would be shared by all *Dog*\ninstances::\n\n    class Dog:\n\n        tricks = []             # mistaken use of a class variable\n\n        def __init__(self, name):\n            self.name = name\n\n        def add_trick(self, trick):\n            self.tricks.append(trick)",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 15862,
+        "unit_end": 17793,
+        "start_char": 901,
+        "end_char": 1716
+      }
+    },
+    "source_text": "In general, methods work as follows.  When a non-data attribute\nof an instance is referenced, the instance's class is searched.\nIf the name denotes a valid class attribute that is a function object,\nreferences to both the instance object and the function object\nare packed into a method object.  When the method object is called\nwith an argument list, a new argument list is constructed from the instance\nobject and the argument list, and the function object is called with this new\nargument list.\n\nClass and Instance Variables\n\nGenerally speaking, instance variables are for data unique to each instance\nand class variables are for attributes and methods shared by all instances\nof the class::\n\n    class Dog:\n\n        kind = 'canine'         # class variable shared by all instances\n\n        def __init__(self, name):\n            self.name = name    # instance variable unique to each instance\n\n    >>> d = Dog('Fido')\n    >>> e = Dog('Buddy')\n    >>> d.kind                  # shared by all dogs\n    'canine'\n    >>> e.kind                  # shared by all dogs\n    'canine'\n    >>> d.name                  # unique to d\n    'Fido'\n    >>> e.name                  # unique to e\n    'Buddy'\n\nAs discussed in tut-object, shared data can have possibly surprising\neffects with involving mutable objects such as lists and dictionaries.\nFor example, the *tricks* list in the following code should not be used as a\nclass variable because just a single list would be shared by all *Dog*\ninstances::\n\n    class Dog:\n\n        tricks = []             # mistaken use of a class variable\n\n        def __init__(self, name):\n            self.name = name\n\n        def add_trick(self, trick):\n            self.tricks.append(trick)\n\n    >>> d = Dog('Fido')\n    >>> e = Dog('Buddy')\n    >>> d.add_trick('roll over')\n    >>> e.add_trick('play dead')\n    >>> d.tricks                # unexpectedly shared by all dogs\n    ['roll over', 'play dead']\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "A",
+    "page": "classes:010",
+    "anchor": 908,
+    "chunk": {
+      "chunk_id": "313dbab26f6fffebd179cc3b4a32a4030a0acc4349de954a4cb0af942572984b",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:010",
+      "text": "  >>> e.tricks\n    ['play dead']\n\nRandom Remarks\n\n.. These should perhaps be placed more carefully...\n\nIf the same attribute name occurs in both an instance and in a class,\nthen attribute lookup prioritizes the instance::\n\n    >>> class Warehouse:\n    ...    purpose = 'storage'\n    ...    region = 'west'\n    ...\n    >>> w1 = Warehouse()\n    >>> print(w1.purpose, w1.region)\n    storage west\n    >>> w2 = Warehouse()\n    >>> w2.region = 'east'\n    >>> print(w2.purpose, w2.region)\n    storage east\n\n",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 17793,
+        "unit_end": 19609,
+        "start_char": 450,
+        "end_char": 950
+      }
+    },
+    "source_text": "Correct design of the class should use an instance variable instead::\n\n    class Dog:\n\n        def __init__(self, name):\n            self.name = name\n            self.tricks = []    # creates a new empty list for each dog\n\n        def add_trick(self, trick):\n            self.tricks.append(trick)\n\n    >>> d = Dog('Fido')\n    >>> e = Dog('Buddy')\n    >>> d.add_trick('roll over')\n    >>> e.add_trick('play dead')\n    >>> d.tricks\n    ['roll over']\n    >>> e.tricks\n    ['play dead']\n\nRandom Remarks\n\n.. These should perhaps be placed more carefully...\n\nIf the same attribute name occurs in both an instance and in a class,\nthen attribute lookup prioritizes the instance::\n\n    >>> class Warehouse:\n    ...    purpose = 'storage'\n    ...    region = 'west'\n    ...\n    >>> w1 = Warehouse()\n    >>> print(w1.purpose, w1.region)\n    storage west\n    >>> w2 = Warehouse()\n    >>> w2.region = 'east'\n    >>> print(w2.purpose, w2.region)\n    storage east\n\nData attributes may be referenced by methods as well as by ordinary users\n(\"clients\") of an object.  In other words, classes are not usable to implement\npure abstract data types.  In fact, nothing in Python makes it possible to\nenforce data hiding --- it is all based upon convention.  (On the other hand,\nthe Python implementation, written in C, can completely hide implementation\ndetails and control access to an object if necessary; this can be used by\nextensions to Python written in C.)\n\nClients should use data attributes with care --- clients may mess up invariants\nmaintained by the methods by stamping on their data attributes.  Note that\nclients may add data attributes of their own to an instance object without\naffecting the validity of the methods, as long as name conflicts are avoided ---\nagain, a naming convention can save a lot of headaches here.\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "B",
+    "page": "classes:010",
+    "anchor": 908,
+    "chunk": {
+      "chunk_id": "13775c9da8585eea8c1f615224abba765805e248e0023180b4d90fcf5dc4a95b",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:010",
+      "text": "Correct design of the class should use an instance variable instead::\n\n    class Dog:\n\n        def __init__(self, name):\n            self.name = name\n            self.tricks = []    # creates a new empty list for each dog\n\n        def add_trick(self, trick):\n            self.tricks.append(trick)\n\n    >>> d = Dog('Fido')\n    >>> e = Dog('Buddy')\n    >>> d.add_trick('roll over')\n    >>> e.add_trick('play dead')\n    >>> d.tricks\n    ['roll over']\n    >>> e.tricks\n    ['play dead']\n\nRandom Remarks\n\n.. These should perhaps be placed more carefully...\n\nIf the same attribute name occurs in both an instance and in a class,\nthen attribute lookup prioritizes the instance::\n\n    >>> class Warehouse:\n    ...    purpose = 'storage'\n    ...    region = 'west'\n    ...\n    >>> w1 = Warehouse()\n    >>> print(w1.purpose, w1.region)\n    storage west\n    >>> w2 = Warehouse()\n    >>> w2.region = 'east'\n    >>> print(w2.purpose, w2.region)\n    storage east",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 17793,
+        "unit_end": 19609,
+        "start_char": 0,
+        "end_char": 948
+      }
+    },
+    "source_text": "Correct design of the class should use an instance variable instead::\n\n    class Dog:\n\n        def __init__(self, name):\n            self.name = name\n            self.tricks = []    # creates a new empty list for each dog\n\n        def add_trick(self, trick):\n            self.tricks.append(trick)\n\n    >>> d = Dog('Fido')\n    >>> e = Dog('Buddy')\n    >>> d.add_trick('roll over')\n    >>> e.add_trick('play dead')\n    >>> d.tricks\n    ['roll over']\n    >>> e.tricks\n    ['play dead']\n\nRandom Remarks\n\n.. These should perhaps be placed more carefully...\n\nIf the same attribute name occurs in both an instance and in a class,\nthen attribute lookup prioritizes the instance::\n\n    >>> class Warehouse:\n    ...    purpose = 'storage'\n    ...    region = 'west'\n    ...\n    >>> w1 = Warehouse()\n    >>> print(w1.purpose, w1.region)\n    storage west\n    >>> w2 = Warehouse()\n    >>> w2.region = 'east'\n    >>> print(w2.purpose, w2.region)\n    storage east\n\nData attributes may be referenced by methods as well as by ordinary users\n(\"clients\") of an object.  In other words, classes are not usable to implement\npure abstract data types.  In fact, nothing in Python makes it possible to\nenforce data hiding --- it is all based upon convention.  (On the other hand,\nthe Python implementation, written in C, can completely hide implementation\ndetails and control access to an object if necessary; this can be used by\nextensions to Python written in C.)\n\nClients should use data attributes with care --- clients may mess up invariants\nmaintained by the methods by stamping on their data attributes.  Note that\nclients may add data attributes of their own to an instance object without\naffecting the validity of the methods, as long as name conflicts are avoided ---\nagain, a naming convention can save a lot of headaches here.\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "C",
+    "page": "classes:010",
+    "anchor": 908,
+    "chunk": {
+      "chunk_id": "13775c9da8585eea8c1f615224abba765805e248e0023180b4d90fcf5dc4a95b",
+      "document_id": "python-tutorial-classes",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+      "page": "classes:010",
+      "text": "Correct design of the class should use an instance variable instead::\n\n    class Dog:\n\n        def __init__(self, name):\n            self.name = name\n            self.tricks = []    # creates a new empty list for each dog\n\n        def add_trick(self, trick):\n            self.tricks.append(trick)\n\n    >>> d = Dog('Fido')\n    >>> e = Dog('Buddy')\n    >>> d.add_trick('roll over')\n    >>> e.add_trick('play dead')\n    >>> d.tricks\n    ['roll over']\n    >>> e.tricks\n    ['play dead']\n\nRandom Remarks\n\n.. These should perhaps be placed more carefully...\n\nIf the same attribute name occurs in both an instance and in a class,\nthen attribute lookup prioritizes the instance::\n\n    >>> class Warehouse:\n    ...    purpose = 'storage'\n    ...    region = 'west'\n    ...\n    >>> w1 = Warehouse()\n    >>> print(w1.purpose, w1.region)\n    storage west\n    >>> w2 = Warehouse()\n    >>> w2.region = 'east'\n    >>> print(w2.purpose, w2.region)\n    storage east",
+      "metadata": {
+        "section": "classes",
+        "version": "3.13.0",
+        "language": "en",
+        "unit_start": 17793,
+        "unit_end": 19609,
+        "start_char": 0,
+        "end_char": 948
+      }
+    },
+    "source_text": "Correct design of the class should use an instance variable instead::\n\n    class Dog:\n\n        def __init__(self, name):\n            self.name = name\n            self.tricks = []    # creates a new empty list for each dog\n\n        def add_trick(self, trick):\n            self.tricks.append(trick)\n\n    >>> d = Dog('Fido')\n    >>> e = Dog('Buddy')\n    >>> d.add_trick('roll over')\n    >>> e.add_trick('play dead')\n    >>> d.tricks\n    ['roll over']\n    >>> e.tricks\n    ['play dead']\n\nRandom Remarks\n\n.. These should perhaps be placed more carefully...\n\nIf the same attribute name occurs in both an instance and in a class,\nthen attribute lookup prioritizes the instance::\n\n    >>> class Warehouse:\n    ...    purpose = 'storage'\n    ...    region = 'west'\n    ...\n    >>> w1 = Warehouse()\n    >>> print(w1.purpose, w1.region)\n    storage west\n    >>> w2 = Warehouse()\n    >>> w2.region = 'east'\n    >>> print(w2.purpose, w2.region)\n    storage east\n\nData attributes may be referenced by methods as well as by ordinary users\n(\"clients\") of an object.  In other words, classes are not usable to implement\npure abstract data types.  In fact, nothing in Python makes it possible to\nenforce data hiding --- it is all based upon convention.  (On the other hand,\nthe Python implementation, written in C, can completely hide implementation\ndetails and control access to an object if necessary; this can be used by\nextensions to Python written in C.)\n\nClients should use data attributes with care --- clients may mess up invariants\nmaintained by the methods by stamping on their data attributes.  Note that\nclients may add data attributes of their own to an instance object without\naffecting the validity of the methods, as long as name conflicts are avoided ---\nagain, a naming convention can save a lot of headaches here.\n\n",
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  }
+]

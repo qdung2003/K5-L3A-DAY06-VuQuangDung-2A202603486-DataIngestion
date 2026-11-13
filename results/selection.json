@@ -1,0 +1,23 @@
+{
+  "selected_strategy": "B",
+  "dev_metrics": {
+    "A/dev": {
+      "n": 15,
+      "hit_at_1": 8,
+      "hit_at_3": 9
+    },
+    "B/dev": {
+      "n": 15,
+      "hit_at_1": 9,
+      "hit_at_3": 13
+    },
+    "C/dev": {
+      "n": 15,
+      "hit_at_1": 9,
+      "hit_at_3": 13
+    }
+  },
+  "rule": "Max dev Evidence Hit@3, then dev Hit@1; if tied prefer B, C, A in that order (B simpler than filtering and structurally aware). No test-based tuning.",
+  "selected_at": "2026-11-13T11:08:40.389010+00:00",
+  "test_queries_executed_at_selection": 0
+}

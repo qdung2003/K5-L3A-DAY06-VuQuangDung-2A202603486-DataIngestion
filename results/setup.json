@@ -1,0 +1,13 @@
+{
+  "backend": "Chroma PersistentClient",
+  "dimensions": 384,
+  "units": 93,
+  "questions": 20,
+  "persisted_counts": {
+    "A": 456,
+    "B": 256,
+    "C": 256
+  },
+  "status": "Setup OK",
+  "docker_required": false
+}

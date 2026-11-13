@@ -1,0 +1,32 @@
+{
+  "A/dev": {
+    "n": 15,
+    "hit_at_1": 8,
+    "hit_at_3": 9
+  },
+  "A/test": {
+    "n": 5,
+    "hit_at_1": 4,
+    "hit_at_3": 4
+  },
+  "B/dev": {
+    "n": 15,
+    "hit_at_1": 9,
+    "hit_at_3": 13
+  },
+  "B/test": {
+    "n": 5,
+    "hit_at_1": 4,
+    "hit_at_3": 5
+  },
+  "C/dev": {
+    "n": 15,
+    "hit_at_1": 9,
+    "hit_at_3": 13
+  },
+  "C/test": {
+    "n": 5,
+    "hit_at_1": 4,
+    "hit_at_3": 5
+  }
+}

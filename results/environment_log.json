@@ -1,0 +1,8 @@
+{
+  "python": "3.13.15",
+  "docker": {"available": false, "observed": "docker command not found"},
+  "git": {"repository_initialized": true, "remote": null},
+  "network": {"used_for": ["CPython v3.13.0 source files", "Hugging Face model files"], "network_restricted_initially": true},
+  "postgres_setup_check": {"run": false, "reason": "Selected Chroma backend; Docker unavailable"},
+  "fallback": "No mock/vector fallback used; local model and persistent Chroma ran successfully"
+}

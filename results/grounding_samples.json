@@ -1,0 +1,1124 @@
+[
+  {
+    "strategy": "A",
+    "question": {
+      "id": "Q16",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "How do instance variables differ from class variables in terms of sharing?",
+      "expected_answer": "Instance variables are unique to an instance; class variables are shared by all instances.",
+      "gold_source_id": "python-tutorial-classes",
+      "gold_page": "classes:009",
+      "evidence_quote": "Generally speaking, instance variables are for data unique to each instance and class variables are for attributes and methods shared by all instances of the class",
+      "filter": null,
+      "alternative_gold": []
+    },
+    "hits": [
+      {
+        "chunk_id": "c23360ca9272ca7a4360fd5ee288c7cdcec876bd24f0758bdfc8003aa153a370",
+        "text": "n object is called with this new\nargument list.\n\nClass and Instance Variables\n\nGenerally speaking, instance variables are for data unique to each instance\nand class variables are for attributes and methods shared by all instances\nof the class::\n\n    class Dog:\n\n        kind = 'canine'         # class variable shared by all instances\n\n        def __init__(self, name):\n            self.name = name    # instance variable unique to each instance\n\n    >>> d = Dog('Fido')\n    >>> e = Dog('Buddy')\n    ",
+        "metadata": {
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+          "unit_end": 17793,
+          "start_char": 450,
+          "version": "3.13.0",
+          "unit_start": 15862,
+          "page": "classes:009",
+          "language": "en",
+          "document_id": "python-tutorial-classes",
+          "end_char": 950,
+          "section": "classes"
+        },
+        "score": 0.579384446144104,
+        "cosine_distance": 0.420615553855896
+      },
+      {
+        "chunk_id": "2b6d0d77dbfdfa625c2bbc6465f87f9d4978411f5cc6a31ea7ce48e1c7babe97",
+        "text": "Classes\n\nClasses provide a means of bundling data and functionality together.  Creating\na new class creates a new *type* of object, allowing new *instances* of that\ntype to be made.  Each class instance can have attributes attached to it for\nmaintaining its state.  Class instances can also have methods (defined by its\nclass) for modifying its state.\n\nCompared with other programming languages, Python's class mechanism adds classes\nwith a minimum of new syntax and semantics.  It is a mixture of th",
+        "metadata": {
+          "section": "classes",
+          "document_id": "python-tutorial-classes",
+          "version": "3.13.0",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+          "start_char": 0,
+          "unit_start": 0,
+          "language": "en",
+          "unit_end": 2039,
+          "page": "classes:001",
+          "end_char": 500
+        },
+        "score": 0.5477936267852783,
+        "cosine_distance": 0.4522063732147217
+      },
+      {
+        "chunk_id": "512a58c28ebb64df8ffe8ba9230c9961df2f38d8e6aaf29938b4d7fe807e8d74",
+        "text": "reated by the class definition; we'll learn more about class objects in the\nnext section.  The original local scope (the one in effect just before the class\ndefinition was entered) is reinstated, and the class object is bound here to the\nclass name given in the class definition header (ClassName in the\nexample).\n\nClass Objects\n\nClass objects support two kinds of operations: attribute references and\ninstantiation.\n\n*Attribute references* use the standard syntax used for all attribute references\ni",
+        "metadata": {
+          "page": "classes:006",
+          "start_char": 1350,
+          "section": "classes",
+          "unit_end": 11771,
+          "language": "en",
+          "document_id": "python-tutorial-classes",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+          "unit_start": 9741,
+          "end_char": 1850,
+          "version": "3.13.0"
+        },
+        "score": 0.4738729000091553,
+        "cosine_distance": 0.5261270999908447
+      }
+    ],
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "B",
+    "question": {
+      "id": "Q16",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "How do instance variables differ from class variables in terms of sharing?",
+      "expected_answer": "Instance variables are unique to an instance; class variables are shared by all instances.",
+      "gold_source_id": "python-tutorial-classes",
+      "gold_page": "classes:009",
+      "evidence_quote": "Generally speaking, instance variables are for data unique to each instance and class variables are for attributes and methods shared by all instances of the class",
+      "filter": null,
+      "alternative_gold": []
+    },
+    "hits": [
+      {
+        "chunk_id": "ac43d434db904d0b6e0d76f83a40e8181f1675d43a0e0be340617385f6c34d22",
+        "text": "Classes\n\nClasses provide a means of bundling data and functionality together.  Creating\na new class creates a new *type* of object, allowing new *instances* of that\ntype to be made.  Each class instance can have attributes attached to it for\nmaintaining its state.  Class instances can also have methods (defined by its\nclass) for modifying its state.",
+        "metadata": {
+          "document_id": "python-tutorial-classes",
+          "end_char": 351,
+          "start_char": 0,
+          "page": "classes:001",
+          "section": "classes",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+          "unit_start": 0,
+          "version": "3.13.0",
+          "unit_end": 2039,
+          "language": "en"
+        },
+        "score": 0.5731725692749023,
+        "cosine_distance": 0.42682743072509766
+      },
+      {
+        "chunk_id": "a3c0a3cd6fdac7ed2a31ef68ed3d82745956a344e7a7a819660730f93fec72a5",
+        "text": "In general, methods work as follows.  When a non-data attribute\nof an instance is referenced, the instance's class is searched.\nIf the name denotes a valid class attribute that is a function object,\nreferences to both the instance object and the function object\nare packed into a method object.  When the method object is called\nwith an argument list, a new argument list is constructed from the instance\nobject and the argument list, and the function object is called with this new\nargument list.\n\nClass and Instance Variables\n\nGenerally speaking, instance variables are for data unique to each instance\nand class variables are for attributes and methods shared by all instances\nof the class::\n\n    class Dog:\n\n        kind = 'canine'         # class variable shared by all instances\n\n        def __init__(self, name):\n            self.name = name    # instance variable unique to each instance",
+        "metadata": {
+          "language": "en",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+          "document_id": "python-tutorial-classes",
+          "page": "classes:009",
+          "unit_end": 17793,
+          "unit_start": 15862,
+          "end_char": 895,
+          "section": "classes",
+          "start_char": 0,
+          "version": "3.13.0"
+        },
+        "score": 0.5424869060516357,
+        "cosine_distance": 0.45751309394836426
+      },
+      {
+        "chunk_id": "88dfd58d0907e822d2f27983beb310d4460908d5c7776bba6385e0c830bf1b74",
+        "text": ">>> d = Dog('Fido')\n    >>> e = Dog('Buddy')\n    >>> d.kind                  # shared by all dogs\n    'canine'\n    >>> e.kind                  # shared by all dogs\n    'canine'\n    >>> d.name                  # unique to d\n    'Fido'\n    >>> e.name                  # unique to e\n    'Buddy'\n\nAs discussed in tut-object, shared data can have possibly surprising\neffects with involving mutable objects such as lists and dictionaries.\nFor example, the *tricks* list in the following code should not be used as a\nclass variable because just a single list would be shared by all *Dog*\ninstances::\n\n    class Dog:\n\n        tricks = []             # mistaken use of a class variable\n\n        def __init__(self, name):\n            self.name = name\n\n        def add_trick(self, trick):\n            self.tricks.append(trick)",
+        "metadata": {
+          "section": "classes",
+          "document_id": "python-tutorial-classes",
+          "start_char": 901,
+          "unit_end": 17793,
+          "language": "en",
+          "version": "3.13.0",
+          "end_char": 1716,
+          "page": "classes:009",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+          "unit_start": 15862
+        },
+        "score": 0.5364921689033508,
+        "cosine_distance": 0.46350783109664917
+      }
+    ],
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "C",
+    "question": {
+      "id": "Q16",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "How do instance variables differ from class variables in terms of sharing?",
+      "expected_answer": "Instance variables are unique to an instance; class variables are shared by all instances.",
+      "gold_source_id": "python-tutorial-classes",
+      "gold_page": "classes:009",
+      "evidence_quote": "Generally speaking, instance variables are for data unique to each instance and class variables are for attributes and methods shared by all instances of the class",
+      "filter": null,
+      "alternative_gold": []
+    },
+    "hits": [
+      {
+        "chunk_id": "ac43d434db904d0b6e0d76f83a40e8181f1675d43a0e0be340617385f6c34d22",
+        "text": "Classes\n\nClasses provide a means of bundling data and functionality together.  Creating\na new class creates a new *type* of object, allowing new *instances* of that\ntype to be made.  Each class instance can have attributes attached to it for\nmaintaining its state.  Class instances can also have methods (defined by its\nclass) for modifying its state.",
+        "metadata": {
+          "start_char": 0,
+          "end_char": 351,
+          "section": "classes",
+          "page": "classes:001",
+          "language": "en",
+          "document_id": "python-tutorial-classes",
+          "unit_end": 2039,
+          "version": "3.13.0",
+          "unit_start": 0,
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst"
+        },
+        "score": 0.5731725692749023,
+        "cosine_distance": 0.42682743072509766
+      },
+      {
+        "chunk_id": "a3c0a3cd6fdac7ed2a31ef68ed3d82745956a344e7a7a819660730f93fec72a5",
+        "text": "In general, methods work as follows.  When a non-data attribute\nof an instance is referenced, the instance's class is searched.\nIf the name denotes a valid class attribute that is a function object,\nreferences to both the instance object and the function object\nare packed into a method object.  When the method object is called\nwith an argument list, a new argument list is constructed from the instance\nobject and the argument list, and the function object is called with this new\nargument list.\n\nClass and Instance Variables\n\nGenerally speaking, instance variables are for data unique to each instance\nand class variables are for attributes and methods shared by all instances\nof the class::\n\n    class Dog:\n\n        kind = 'canine'         # class variable shared by all instances\n\n        def __init__(self, name):\n            self.name = name    # instance variable unique to each instance",
+        "metadata": {
+          "section": "classes",
+          "unit_start": 15862,
+          "language": "en",
+          "end_char": 895,
+          "page": "classes:009",
+          "version": "3.13.0",
+          "unit_end": 17793,
+          "document_id": "python-tutorial-classes",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+          "start_char": 0
+        },
+        "score": 0.5424869060516357,
+        "cosine_distance": 0.45751309394836426
+      },
+      {
+        "chunk_id": "88dfd58d0907e822d2f27983beb310d4460908d5c7776bba6385e0c830bf1b74",
+        "text": ">>> d = Dog('Fido')\n    >>> e = Dog('Buddy')\n    >>> d.kind                  # shared by all dogs\n    'canine'\n    >>> e.kind                  # shared by all dogs\n    'canine'\n    >>> d.name                  # unique to d\n    'Fido'\n    >>> e.name                  # unique to e\n    'Buddy'\n\nAs discussed in tut-object, shared data can have possibly surprising\neffects with involving mutable objects such as lists and dictionaries.\nFor example, the *tricks* list in the following code should not be used as a\nclass variable because just a single list would be shared by all *Dog*\ninstances::\n\n    class Dog:\n\n        tricks = []             # mistaken use of a class variable\n\n        def __init__(self, name):\n            self.name = name\n\n        def add_trick(self, trick):\n            self.tricks.append(trick)",
+        "metadata": {
+          "language": "en",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+          "document_id": "python-tutorial-classes",
+          "unit_end": 17793,
+          "section": "classes",
+          "start_char": 901,
+          "unit_start": 15862,
+          "page": "classes:009",
+          "version": "3.13.0",
+          "end_char": 1716
+        },
+        "score": 0.5364921689033508,
+        "cosine_distance": 0.46350783109664917
+      }
+    ],
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "A",
+    "question": {
+      "id": "Q17",
+      "split": "test",
+      "category": "condition",
+      "question": "If both try and finally return values, which return value does the caller receive?",
+      "expected_answer": "The value returned by finally.",
+      "gold_source_id": "python-tutorial-errors",
+      "gold_page": "errors:008",
+      "evidence_quote": "If a finally clause includes a return statement, the returned value will be the one from the finally clause's return statement, not the value from the try clause's return statement.",
+      "filter": null,
+      "alternative_gold": []
+    },
+    "hits": [
+      {
+        "chunk_id": "cc484f065da953d1adb6e06e45838cb9539995258c2874e9e90493476c47eea3",
+        "text": "ue or return statement, exceptions are not\n  re-raised.\n\n* If the try statement reaches a break,\n  continue or return statement, the\n  finally clause will execute just prior to the\n  break, continue or return\n  statement's execution.\n\n* If a finally clause includes a return\n  statement, the returned value will be the one from the\n  finally clause's return statement, not the\n  value from the try clause's return\n  statement.\n\nFor example::\n\n   >>> def bool_return():\n   ...     try:\n   ...         ",
+        "metadata": {
+          "unit_end": 15290,
+          "version": "3.13.0",
+          "language": "en",
+          "end_char": 950,
+          "section": "errors",
+          "unit_start": 13465,
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/errors.rst",
+          "page": "errors:008",
+          "start_char": 450,
+          "document_id": "python-tutorial-errors"
+        },
+        "score": 0.6174333691596985,
+        "cosine_distance": 0.3825666308403015
+      },
+      {
+        "chunk_id": "8483d251c7ba9e964301c07487366cc60e8fcb4ab1851a519a4af56546766d76",
+        "text": "* If an exception occurs during execution of the try\n  clause, the exception may be handled by an except\n  clause. If the exception is not handled by an except\n  clause, the exception is re-raised after the finally\n  clause has been executed.\n\n* An exception could occur during execution of an except\n  or else clause. Again, the exception is re-raised after\n  the finally clause has been executed.\n\n* If the finally clause executes a break,\n  continue or return statement, exceptions are not\n  re-ra",
+        "metadata": {
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/errors.rst",
+          "start_char": 0,
+          "end_char": 500,
+          "unit_start": 13465,
+          "document_id": "python-tutorial-errors",
+          "page": "errors:008",
+          "language": "en",
+          "section": "errors",
+          "unit_end": 15290,
+          "version": "3.13.0"
+        },
+        "score": 0.5321862697601318,
+        "cosine_distance": 0.46781373023986816
+      },
+      {
+        "chunk_id": "b50251a20f07d74311b021cad22308f11aa28bb2f526d163503d97ce193a0788",
+        "text": "def bool_return():\n   ...     try:\n   ...         return True\n   ...     finally:\n   ...         return False\n   ...\n   >>> bool_return()\n   False\n\nA more complicated example::\n\n   >>> def divide(x, y):\n   ...     try:\n   ...         result = x / y\n   ...     except ZeroDivisionError:\n   ...         print(\"division by zero!\")\n   ...     else:\n   ...         print(\"result is\", result)\n   ...     finally:\n   ...         print(\"executing finally clause\")\n   ...\n   >>> divide(2, 1)\n   result is 2.0\n",
+        "metadata": {
+          "unit_start": 13465,
+          "document_id": "python-tutorial-errors",
+          "page": "errors:008",
+          "start_char": 900,
+          "version": "3.13.0",
+          "section": "errors",
+          "language": "en",
+          "unit_end": 15290,
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/errors.rst",
+          "end_char": 1400
+        },
+        "score": 0.5037848949432373,
+        "cosine_distance": 0.4962151050567627
+      }
+    ],
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "B",
+    "question": {
+      "id": "Q17",
+      "split": "test",
+      "category": "condition",
+      "question": "If both try and finally return values, which return value does the caller receive?",
+      "expected_answer": "The value returned by finally.",
+      "gold_source_id": "python-tutorial-errors",
+      "gold_page": "errors:008",
+      "evidence_quote": "If a finally clause includes a return statement, the returned value will be the one from the finally clause's return statement, not the value from the try clause's return statement.",
+      "filter": null,
+      "alternative_gold": []
+    },
+    "hits": [
+      {
+        "chunk_id": "140ca815b3b2f56d5ccfcc961a02b66e0dfb16d453ebae058e313013a3a645cf",
+        "text": "* If an exception occurs during execution of the try\n  clause, the exception may be handled by an except\n  clause. If the exception is not handled by an except\n  clause, the exception is re-raised after the finally\n  clause has been executed.\n\n* An exception could occur during execution of an except\n  or else clause. Again, the exception is re-raised after\n  the finally clause has been executed.\n\n* If the finally clause executes a break,\n  continue or return statement, exceptions are not\n  re-raised.\n\n* If the try statement reaches a break,\n  continue or return statement, the\n  finally clause will execute just prior to the\n  break, continue or return\n  statement's execution.\n\n* If a finally clause includes a return\n  statement, the returned value will be the one from the\n  finally clause's return statement, not the\n  value from the try clause's return\n  statement.\n\nFor example::",
+        "metadata": {
+          "start_char": 0,
+          "unit_end": 15290,
+          "document_id": "python-tutorial-errors",
+          "page": "errors:008",
+          "end_char": 891,
+          "section": "errors",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/errors.rst",
+          "version": "3.13.0",
+          "unit_start": 13465,
+          "language": "en"
+        },
+        "score": 0.6489806771278381,
+        "cosine_distance": 0.35101932287216187
+      },
+      {
+        "chunk_id": "9dcaf3d5c9a1721dac52dbc3f2ab66d380d74ed082ec8a55632f01f75fac98f8",
+        "text": "Many standard modules define their own exceptions to report errors that may\noccur in functions they define.\n\nDefining Clean-up Actions\n\nThe try statement has another optional clause which is intended to\ndefine clean-up actions that must be executed under all circumstances.  For\nexample::\n\n   >>> try:\n   ...     raise KeyboardInterrupt\n   ... finally:\n   ...     print('Goodbye, world!')\n   ...\n   Goodbye, world!\n   Traceback (most recent call last):\n     File \"<stdin>\", line 2, in <module>\n       raise KeyboardInterrupt\n   KeyboardInterrupt\n\nIf a finally clause is present, the finally\nclause will execute as the last task before the try\nstatement completes. The finally clause runs whether or\nnot the try statement produces an exception. The following\npoints discuss more complex cases when an exception occurs:",
+        "metadata": {
+          "unit_end": 13465,
+          "language": "en",
+          "page": "errors:007",
+          "version": "3.13.0",
+          "section": "errors",
+          "end_char": 1818,
+          "start_char": 1001,
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/errors.rst",
+          "document_id": "python-tutorial-errors",
+          "unit_start": 11645
+        },
+        "score": 0.4877973198890686,
+        "cosine_distance": 0.5122026801109314
+      },
+      {
+        "chunk_id": "5ebad26552592f4fd471d870fd2b4d435304968c437b46b7e5d587d12645e50c",
+        "text": ">>> def bool_return():\n   ...     try:\n   ...         return True\n   ...     finally:\n   ...         return False\n   ...\n   >>> bool_return()\n   False\n\nA more complicated example::\n\n   >>> def divide(x, y):\n   ...     try:\n   ...         result = x / y\n   ...     except ZeroDivisionError:\n   ...         print(\"division by zero!\")\n   ...     else:\n   ...         print(\"result is\", result)\n   ...     finally:\n   ...         print(\"executing finally clause\")\n   ...\n   >>> divide(2, 1)\n   result is 2.0\n   executing finally clause\n   >>> divide(2, 0)\n   division by zero!\n   executing finally clause\n   >>> divide(\"2\", \"1\")\n   executing finally clause\n   Traceback (most recent call last):\n     File \"<stdin>\", line 1, in <module>\n       divide(\"2\", \"0\")\n       ~~~~~~^^^^^^^^^^\n     File \"<stdin>\", line 3, in divide\n       result = x / y\n                ~~^~~\n   TypeError: unsupported operand type(s) for /: 'str' and 'str'",
+        "metadata": {
+          "document_id": "python-tutorial-errors",
+          "unit_end": 15290,
+          "unit_start": 13465,
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/errors.rst",
+          "language": "en",
+          "end_char": 1823,
+          "page": "errors:008",
+          "start_char": 896,
+          "version": "3.13.0",
+          "section": "errors"
+        },
+        "score": 0.4591728448867798,
+        "cosine_distance": 0.5408271551132202
+      }
+    ],
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "C",
+    "question": {
+      "id": "Q17",
+      "split": "test",
+      "category": "condition",
+      "question": "If both try and finally return values, which return value does the caller receive?",
+      "expected_answer": "The value returned by finally.",
+      "gold_source_id": "python-tutorial-errors",
+      "gold_page": "errors:008",
+      "evidence_quote": "If a finally clause includes a return statement, the returned value will be the one from the finally clause's return statement, not the value from the try clause's return statement.",
+      "filter": null,
+      "alternative_gold": []
+    },
+    "hits": [
+      {
+        "chunk_id": "140ca815b3b2f56d5ccfcc961a02b66e0dfb16d453ebae058e313013a3a645cf",
+        "text": "* If an exception occurs during execution of the try\n  clause, the exception may be handled by an except\n  clause. If the exception is not handled by an except\n  clause, the exception is re-raised after the finally\n  clause has been executed.\n\n* An exception could occur during execution of an except\n  or else clause. Again, the exception is re-raised after\n  the finally clause has been executed.\n\n* If the finally clause executes a break,\n  continue or return statement, exceptions are not\n  re-raised.\n\n* If the try statement reaches a break,\n  continue or return statement, the\n  finally clause will execute just prior to the\n  break, continue or return\n  statement's execution.\n\n* If a finally clause includes a return\n  statement, the returned value will be the one from the\n  finally clause's return statement, not the\n  value from the try clause's return\n  statement.\n\nFor example::",
+        "metadata": {
+          "start_char": 0,
+          "unit_end": 15290,
+          "section": "errors",
+          "end_char": 891,
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/errors.rst",
+          "unit_start": 13465,
+          "version": "3.13.0",
+          "page": "errors:008",
+          "document_id": "python-tutorial-errors",
+          "language": "en"
+        },
+        "score": 0.6489806771278381,
+        "cosine_distance": 0.35101932287216187
+      },
+      {
+        "chunk_id": "9dcaf3d5c9a1721dac52dbc3f2ab66d380d74ed082ec8a55632f01f75fac98f8",
+        "text": "Many standard modules define their own exceptions to report errors that may\noccur in functions they define.\n\nDefining Clean-up Actions\n\nThe try statement has another optional clause which is intended to\ndefine clean-up actions that must be executed under all circumstances.  For\nexample::\n\n   >>> try:\n   ...     raise KeyboardInterrupt\n   ... finally:\n   ...     print('Goodbye, world!')\n   ...\n   Goodbye, world!\n   Traceback (most recent call last):\n     File \"<stdin>\", line 2, in <module>\n       raise KeyboardInterrupt\n   KeyboardInterrupt\n\nIf a finally clause is present, the finally\nclause will execute as the last task before the try\nstatement completes. The finally clause runs whether or\nnot the try statement produces an exception. The following\npoints discuss more complex cases when an exception occurs:",
+        "metadata": {
+          "section": "errors",
+          "document_id": "python-tutorial-errors",
+          "version": "3.13.0",
+          "unit_end": 13465,
+          "unit_start": 11645,
+          "start_char": 1001,
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/errors.rst",
+          "page": "errors:007",
+          "language": "en",
+          "end_char": 1818
+        },
+        "score": 0.4877973198890686,
+        "cosine_distance": 0.5122026801109314
+      },
+      {
+        "chunk_id": "5ebad26552592f4fd471d870fd2b4d435304968c437b46b7e5d587d12645e50c",
+        "text": ">>> def bool_return():\n   ...     try:\n   ...         return True\n   ...     finally:\n   ...         return False\n   ...\n   >>> bool_return()\n   False\n\nA more complicated example::\n\n   >>> def divide(x, y):\n   ...     try:\n   ...         result = x / y\n   ...     except ZeroDivisionError:\n   ...         print(\"division by zero!\")\n   ...     else:\n   ...         print(\"result is\", result)\n   ...     finally:\n   ...         print(\"executing finally clause\")\n   ...\n   >>> divide(2, 1)\n   result is 2.0\n   executing finally clause\n   >>> divide(2, 0)\n   division by zero!\n   executing finally clause\n   >>> divide(\"2\", \"1\")\n   executing finally clause\n   Traceback (most recent call last):\n     File \"<stdin>\", line 1, in <module>\n       divide(\"2\", \"0\")\n       ~~~~~~^^^^^^^^^^\n     File \"<stdin>\", line 3, in divide\n       result = x / y\n                ~~^~~\n   TypeError: unsupported operand type(s) for /: 'str' and 'str'",
+        "metadata": {
+          "version": "3.13.0",
+          "document_id": "python-tutorial-errors",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/errors.rst",
+          "unit_end": 15290,
+          "end_char": 1823,
+          "start_char": 896,
+          "unit_start": 13465,
+          "section": "errors",
+          "language": "en",
+          "page": "errors:008"
+        },
+        "score": 0.4591728448867798,
+        "cosine_distance": 0.5408271551132202
+      }
+    ],
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "A",
+    "question": {
+      "id": "Q18",
+      "split": "test",
+      "category": "condition",
+      "question": "Are single-underscore attributes enforced private, and how should _spam be treated?",
+      "expected_answer": "No enforced private instance variables; a leading underscore signals a non-public implementation detail.",
+      "gold_source_id": "python-tutorial-classes",
+      "gold_page": "classes:014",
+      "evidence_quote": "\"Private\" instance variables that cannot be accessed except from inside an object don't exist in Python. However, there is a convention that is followed by most Python code: a name prefixed with an underscore (e.g. _spam) should be treated as a non-public part of the API",
+      "filter": null,
+      "alternative_gold": []
+    },
+    "hits": [
+      {
+        "chunk_id": "91161187804de7ce460b215a328f01eb0931ce0f60bf2509719576ae3be86b07",
+        "text": " to avoid name\nclashes of names with names defined by subclasses), there is limited support for\nsuch a mechanism, called name mangling.  Any identifier of the form\n__spam (at least two leading underscores, at most one trailing underscore)\nis textually replaced with _classname__spam, where classname is the\ncurrent class name with leading underscore(s) stripped.  This mangling is done\nwithout regard to the syntactic position of the identifier, as long as it\noccurs within the definition of a class.",
+        "metadata": {
+          "unit_end": 27338,
+          "page": "classes:014",
+          "end_char": 1850,
+          "version": "3.13.0",
+          "start_char": 1350,
+          "unit_start": 25486,
+          "section": "classes",
+          "document_id": "python-tutorial-classes",
+          "language": "en",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst"
+        },
+        "score": 0.6086684465408325,
+        "cosine_distance": 0.3913315534591675
+      },
+      {
+        "chunk_id": "7d7389ee4ed39ece4952e5a72d6d82bd07ef418f74509ea8f9e7cc6d19b3bbf4",
+        "text": "You can also see that there was no previous binding for *spam* before the\nglobal assignment.\n\nA First Look at Classes\n\nClasses introduce a little bit of new syntax, three new object types, and some\nnew semantics.\n\nClass Definition Syntax\n\nThe simplest form of class definition looks like this::\n\n   class ClassName:\n       <statement-1>\n       .\n       .\n       .\n       <statement-N>\n\nClass definitions, like function definitions (def statements) must be\nexecuted before they have any effect.  (You ",
+        "metadata": {
+          "document_id": "python-tutorial-classes",
+          "version": "3.13.0",
+          "end_char": 500,
+          "unit_start": 9741,
+          "unit_end": 11771,
+          "section": "classes",
+          "language": "en",
+          "page": "classes:006",
+          "start_char": 0,
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst"
+        },
+        "score": 0.5018600225448608,
+        "cosine_distance": 0.49813997745513916
+      },
+      {
+        "chunk_id": "5c3a728d9f0e61d67209015b1d218c78db707f8df3e42650f89f0eece64c8e43",
+        "text": "nding of *spam*, and the global assignment changed the module-level\nbinding.\n\n",
+        "metadata": {
+          "unit_end": 9741,
+          "start_char": 1800,
+          "page": "classes:005",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+          "document_id": "python-tutorial-classes",
+          "version": "3.13.0",
+          "language": "en",
+          "unit_start": 7863,
+          "end_char": 1878,
+          "section": "classes"
+        },
+        "score": 0.48890411853790283,
+        "cosine_distance": 0.5110958814620972
+      }
+    ],
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "B",
+    "question": {
+      "id": "Q18",
+      "split": "test",
+      "category": "condition",
+      "question": "Are single-underscore attributes enforced private, and how should _spam be treated?",
+      "expected_answer": "No enforced private instance variables; a leading underscore signals a non-public implementation detail.",
+      "gold_source_id": "python-tutorial-classes",
+      "gold_page": "classes:014",
+      "evidence_quote": "\"Private\" instance variables that cannot be accessed except from inside an object don't exist in Python. However, there is a convention that is followed by most Python code: a name prefixed with an underscore (e.g. _spam) should be treated as a non-public part of the API",
+      "filter": null,
+      "alternative_gold": []
+    },
+    "hits": [
+      {
+        "chunk_id": "3a771c7dc5976024dc5ba48ee62f86946ec30fcd9e2ddc07aad4bd26b9ef46a0",
+        "text": "\"Private\" instance variables that cannot be accessed except from inside an\nobject don't exist in Python.  However, there is a convention that is followed\nby most Python code: a name prefixed with an underscore (e.g. _spam) should\nbe treated as a non-public part of the API (whether it is a function, a method\nor a data member).  It should be considered an implementation detail and subject\nto change without notice.\n\nSince there is a valid use-case for class-private members (namely to avoid name\nclashes of names with names defined by subclasses), there is limited support for\nsuch a mechanism, called name mangling.  Any identifier of the form\n__spam (at least two leading underscores, at most one trailing underscore)\nis textually replaced with _classname__spam, where classname is the\ncurrent class name with leading underscore(s) stripped.  This mangling is done\nwithout regard to the syntactic position of the identifier, as long as it\noccurs within the definition of a class.",
+        "metadata": {
+          "page": "classes:014",
+          "unit_end": 27338,
+          "version": "3.13.0",
+          "unit_start": 25486,
+          "document_id": "python-tutorial-classes",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+          "end_char": 1850,
+          "language": "en",
+          "start_char": 868,
+          "section": "classes"
+        },
+        "score": 0.6566295623779297,
+        "cosine_distance": 0.3433704376220703
+      },
+      {
+        "chunk_id": "3506d56daada24d71c90dc7f4420c7608ea47fea4e784feb0911d9dddeadf2b5",
+        "text": "You can also see that there was no previous binding for *spam* before the\nglobal assignment.\n\nA First Look at Classes\n\nClasses introduce a little bit of new syntax, three new object types, and some\nnew semantics.\n\nClass Definition Syntax\n\nThe simplest form of class definition looks like this::\n\n   class ClassName:\n       <statement-1>\n       .\n       .\n       .\n       <statement-N>\n\nClass definitions, like function definitions (def statements) must be\nexecuted before they have any effect.  (You could conceivably place a class\ndefinition in a branch of an if statement, or inside a function.)\n\nIn practice, the statements inside a class definition will usually be function\ndefinitions, but other statements are allowed, and sometimes useful --- we'll\ncome back to this later.  The function definitions inside a class normally have\na peculiar form of argument list, dictated by the calling conventions for\nmethods --- again, this is explained later.",
+        "metadata": {
+          "document_id": "python-tutorial-classes",
+          "page": "classes:006",
+          "unit_start": 9741,
+          "language": "en",
+          "start_char": 0,
+          "end_char": 953,
+          "section": "classes",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+          "version": "3.13.0",
+          "unit_end": 11771
+        },
+        "score": 0.5053813457489014,
+        "cosine_distance": 0.49461865425109863
+      },
+      {
+        "chunk_id": "9077171b914a423516d974d1b6d9cbc1d3f8de0be829005ff6bd56cc0161dfaf",
+        "text": "Data attributes may be referenced by methods as well as by ordinary users\n(\"clients\") of an object.  In other words, classes are not usable to implement\npure abstract data types.  In fact, nothing in Python makes it possible to\nenforce data hiding --- it is all based upon convention.  (On the other hand,\nthe Python implementation, written in C, can completely hide implementation\ndetails and control access to an object if necessary; this can be used by\nextensions to Python written in C.)\n\nClients should use data attributes with care --- clients may mess up invariants\nmaintained by the methods by stamping on their data attributes.  Note that\nclients may add data attributes of their own to an instance object without\naffecting the validity of the methods, as long as name conflicts are avoided ---\nagain, a naming convention can save a lot of headaches here.",
+        "metadata": {
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+          "section": "classes",
+          "page": "classes:010",
+          "start_char": 950,
+          "end_char": 1814,
+          "unit_start": 17793,
+          "version": "3.13.0",
+          "document_id": "python-tutorial-classes",
+          "unit_end": 19609,
+          "language": "en"
+        },
+        "score": 0.4715343713760376,
+        "cosine_distance": 0.5284656286239624
+      }
+    ],
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "C",
+    "question": {
+      "id": "Q18",
+      "split": "test",
+      "category": "condition",
+      "question": "Are single-underscore attributes enforced private, and how should _spam be treated?",
+      "expected_answer": "No enforced private instance variables; a leading underscore signals a non-public implementation detail.",
+      "gold_source_id": "python-tutorial-classes",
+      "gold_page": "classes:014",
+      "evidence_quote": "\"Private\" instance variables that cannot be accessed except from inside an object don't exist in Python. However, there is a convention that is followed by most Python code: a name prefixed with an underscore (e.g. _spam) should be treated as a non-public part of the API",
+      "filter": null,
+      "alternative_gold": []
+    },
+    "hits": [
+      {
+        "chunk_id": "3a771c7dc5976024dc5ba48ee62f86946ec30fcd9e2ddc07aad4bd26b9ef46a0",
+        "text": "\"Private\" instance variables that cannot be accessed except from inside an\nobject don't exist in Python.  However, there is a convention that is followed\nby most Python code: a name prefixed with an underscore (e.g. _spam) should\nbe treated as a non-public part of the API (whether it is a function, a method\nor a data member).  It should be considered an implementation detail and subject\nto change without notice.\n\nSince there is a valid use-case for class-private members (namely to avoid name\nclashes of names with names defined by subclasses), there is limited support for\nsuch a mechanism, called name mangling.  Any identifier of the form\n__spam (at least two leading underscores, at most one trailing underscore)\nis textually replaced with _classname__spam, where classname is the\ncurrent class name with leading underscore(s) stripped.  This mangling is done\nwithout regard to the syntactic position of the identifier, as long as it\noccurs within the definition of a class.",
+        "metadata": {
+          "language": "en",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+          "page": "classes:014",
+          "document_id": "python-tutorial-classes",
+          "end_char": 1850,
+          "section": "classes",
+          "version": "3.13.0",
+          "start_char": 868,
+          "unit_end": 27338,
+          "unit_start": 25486
+        },
+        "score": 0.6566295623779297,
+        "cosine_distance": 0.3433704376220703
+      },
+      {
+        "chunk_id": "3506d56daada24d71c90dc7f4420c7608ea47fea4e784feb0911d9dddeadf2b5",
+        "text": "You can also see that there was no previous binding for *spam* before the\nglobal assignment.\n\nA First Look at Classes\n\nClasses introduce a little bit of new syntax, three new object types, and some\nnew semantics.\n\nClass Definition Syntax\n\nThe simplest form of class definition looks like this::\n\n   class ClassName:\n       <statement-1>\n       .\n       .\n       .\n       <statement-N>\n\nClass definitions, like function definitions (def statements) must be\nexecuted before they have any effect.  (You could conceivably place a class\ndefinition in a branch of an if statement, or inside a function.)\n\nIn practice, the statements inside a class definition will usually be function\ndefinitions, but other statements are allowed, and sometimes useful --- we'll\ncome back to this later.  The function definitions inside a class normally have\na peculiar form of argument list, dictated by the calling conventions for\nmethods --- again, this is explained later.",
+        "metadata": {
+          "unit_end": 11771,
+          "start_char": 0,
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+          "end_char": 953,
+          "section": "classes",
+          "unit_start": 9741,
+          "language": "en",
+          "document_id": "python-tutorial-classes",
+          "page": "classes:006",
+          "version": "3.13.0"
+        },
+        "score": 0.5053813457489014,
+        "cosine_distance": 0.49461865425109863
+      },
+      {
+        "chunk_id": "9077171b914a423516d974d1b6d9cbc1d3f8de0be829005ff6bd56cc0161dfaf",
+        "text": "Data attributes may be referenced by methods as well as by ordinary users\n(\"clients\") of an object.  In other words, classes are not usable to implement\npure abstract data types.  In fact, nothing in Python makes it possible to\nenforce data hiding --- it is all based upon convention.  (On the other hand,\nthe Python implementation, written in C, can completely hide implementation\ndetails and control access to an object if necessary; this can be used by\nextensions to Python written in C.)\n\nClients should use data attributes with care --- clients may mess up invariants\nmaintained by the methods by stamping on their data attributes.  Note that\nclients may add data attributes of their own to an instance object without\naffecting the validity of the methods, as long as name conflicts are avoided ---\nagain, a naming convention can save a lot of headaches here.",
+        "metadata": {
+          "language": "en",
+          "end_char": 1814,
+          "page": "classes:010",
+          "unit_start": 17793,
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/classes.rst",
+          "document_id": "python-tutorial-classes",
+          "section": "classes",
+          "start_char": 950,
+          "version": "3.13.0",
+          "unit_end": 19609
+        },
+        "score": 0.4715343713760376,
+        "cosine_distance": 0.5284656286239624
+      }
+    ],
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "A",
+    "question": {
+      "id": "Q19",
+      "split": "test",
+      "category": "metadata",
+      "question": "In stdlib2, what approach is preferred for coordinating threads sharing a resource?",
+      "expected_answer": "Concentrate all access to the resource in one thread and feed it requests through the queue module.",
+      "gold_source_id": "python-tutorial-stdlib2",
+      "gold_page": "stdlib2:004",
+      "evidence_quote": "the preferred approach to task coordination is to concentrate all access to a resource in a single thread and then use the queue module to feed that thread with requests from other threads.",
+      "filter": {
+        "section": "stdlib2"
+      },
+      "alternative_gold": []
+    },
+    "hits": [
+      {
+        "chunk_id": "843d8623ad74f47fc9a8173c7e466fac6d46f6d6587e8a7ea6cdb42360f32d7e",
+        "text": "reads\nthat share data or other resources.  To that end, the threading module provides\na number of synchronization primitives including locks, events, condition\nvariables, and semaphores.\n\nWhile those tools are powerful, minor design errors can result in problems that\nare difficult to reproduce.  So, the preferred approach to task coordination is\nto concentrate all access to a resource in a single thread and then use the\nqueue module to feed that thread with requests from other threads.\nApplicati",
+        "metadata": {
+          "document_id": "python-tutorial-stdlib2",
+          "section": "stdlib2",
+          "end_char": 1400,
+          "start_char": 900,
+          "unit_start": 5944,
+          "page": "stdlib2:004",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+          "unit_end": 7890,
+          "language": "en",
+          "version": "3.13.0"
+        },
+        "score": 0.6457740068435669,
+        "cosine_distance": 0.3542259931564331
+      },
+      {
+        "chunk_id": "5d854034570c51bf1c3d8ab5d599495e110314ded3b501e3700c7ef866f45aeb",
+        "text": "The following code shows how the high level threading module can run\ntasks in background while the main program continues to run::\n\n   import threading, zipfile\n\n   class AsyncZip(threading.Thread):\n       def __init__(self, infile, outfile):\n           threading.Thread.__init__(self)\n           self.infile = infile\n           self.outfile = outfile\n\n       def run(self):\n           f = zipfile.ZipFile(self.outfile, 'w', zipfile.ZIP_DEFLATED)\n           f.write(self.infile)\n           f.close()\n",
+        "metadata": {
+          "page": "stdlib2:004",
+          "section": "stdlib2",
+          "unit_start": 5944,
+          "version": "3.13.0",
+          "document_id": "python-tutorial-stdlib2",
+          "start_char": 0,
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+          "language": "en",
+          "end_char": 500,
+          "unit_end": 7890
+        },
+        "score": 0.39772093296051025,
+        "cosine_distance": 0.6022790670394897
+      },
+      {
+        "chunk_id": "4b6a98061ea2e35ee0f204bf5f7743dffaf83f5bcd143d01a3731e6051cbae50",
+        "text": "        f.write(self.infile)\n           f.close()\n           print('Finished background zip of:', self.infile)\n\n   background = AsyncZip('mydata.txt', 'myarchive.zip')\n   background.start()\n   print('The main program continues to run in foreground.')\n\n   background.join()    # Wait for the background task to finish\n   print('Main program waited until background was done.')\n\nThe principal challenge of multi-threaded applications is coordinating threads\nthat share data or other resources.  To that",
+        "metadata": {
+          "start_char": 450,
+          "document_id": "python-tutorial-stdlib2",
+          "unit_end": 7890,
+          "unit_start": 5944,
+          "section": "stdlib2",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+          "page": "stdlib2:004",
+          "language": "en",
+          "version": "3.13.0",
+          "end_char": 950
+        },
+        "score": 0.37126392126083374,
+        "cosine_distance": 0.6287360787391663
+      }
+    ],
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "B",
+    "question": {
+      "id": "Q19",
+      "split": "test",
+      "category": "metadata",
+      "question": "In stdlib2, what approach is preferred for coordinating threads sharing a resource?",
+      "expected_answer": "Concentrate all access to the resource in one thread and feed it requests through the queue module.",
+      "gold_source_id": "python-tutorial-stdlib2",
+      "gold_page": "stdlib2:004",
+      "evidence_quote": "the preferred approach to task coordination is to concentrate all access to a resource in a single thread and then use the queue module to feed that thread with requests from other threads.",
+      "filter": {
+        "section": "stdlib2"
+      },
+      "alternative_gold": []
+    },
+    "hits": [
+      {
+        "chunk_id": "f39e791b3a1c6f2e6e8ecc08f27f651bf219d588e2f4ac7f792ab8949805ce4b",
+        "text": "The principal challenge of multi-threaded applications is coordinating threads\nthat share data or other resources.  To that end, the threading module provides\na number of synchronization primitives including locks, events, condition\nvariables, and semaphores.\n\nWhile those tools are powerful, minor design errors can result in problems that\nare difficult to reproduce.  So, the preferred approach to task coordination is\nto concentrate all access to a resource in a single thread and then use the\nqueue module to feed that thread with requests from other threads.\nApplications using queue.Queue objects for inter-thread communication and\ncoordination are easier to design, more readable, and more reliable.\n\nLogging\n\nThe logging module offers a full featured and flexible logging system.\nAt its simplest, log messages are sent to a file or to sys.stderr::",
+        "metadata": {
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+          "unit_end": 7890,
+          "document_id": "python-tutorial-stdlib2",
+          "page": "stdlib2:004",
+          "section": "stdlib2",
+          "unit_start": 5944,
+          "start_char": 827,
+          "language": "en",
+          "end_char": 1682,
+          "version": "3.13.0"
+        },
+        "score": 0.5259959101676941,
+        "cosine_distance": 0.4740040898323059
+      },
+      {
+        "chunk_id": "d1bb26fe941dfbdef74f2f9628dcae2e94884632701e887b1092d7f2a8f40264",
+        "text": "Multi-threading\n\nThreading is a technique for decoupling tasks which are not sequentially\ndependent.  Threads can be used to improve the responsiveness of applications\nthat accept user input while other tasks run in the background.  A related use\ncase is running I/O in parallel with computations in another thread.",
+        "metadata": {
+          "version": "3.13.0",
+          "section": "stdlib2",
+          "end_char": 1953,
+          "start_char": 1638,
+          "language": "en",
+          "page": "stdlib2:003",
+          "document_id": "python-tutorial-stdlib2",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+          "unit_end": 5944,
+          "unit_start": 3989
+        },
+        "score": 0.40726912021636963,
+        "cosine_distance": 0.5927308797836304
+      },
+      {
+        "chunk_id": "e08b4ec2b1d7958ae5428f83519fd9e49c7caf7efca17d5fe31e8db222f1f103",
+        "text": "The following code shows how the high level threading module can run\ntasks in background while the main program continues to run::\n\n   import threading, zipfile\n\n   class AsyncZip(threading.Thread):\n       def __init__(self, infile, outfile):\n           threading.Thread.__init__(self)\n           self.infile = infile\n           self.outfile = outfile\n\n       def run(self):\n           f = zipfile.ZipFile(self.outfile, 'w', zipfile.ZIP_DEFLATED)\n           f.write(self.infile)\n           f.close()\n           print('Finished background zip of:', self.infile)\n\n   background = AsyncZip('mydata.txt', 'myarchive.zip')\n   background.start()\n   print('The main program continues to run in foreground.')\n\n   background.join()    # Wait for the background task to finish\n   print('Main program waited until background was done.')",
+        "metadata": {
+          "page": "stdlib2:004",
+          "document_id": "python-tutorial-stdlib2",
+          "unit_end": 7890,
+          "end_char": 825,
+          "language": "en",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+          "start_char": 0,
+          "section": "stdlib2",
+          "unit_start": 5944,
+          "version": "3.13.0"
+        },
+        "score": 0.3518727421760559,
+        "cosine_distance": 0.6481272578239441
+      }
+    ],
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "C",
+    "question": {
+      "id": "Q19",
+      "split": "test",
+      "category": "metadata",
+      "question": "In stdlib2, what approach is preferred for coordinating threads sharing a resource?",
+      "expected_answer": "Concentrate all access to the resource in one thread and feed it requests through the queue module.",
+      "gold_source_id": "python-tutorial-stdlib2",
+      "gold_page": "stdlib2:004",
+      "evidence_quote": "the preferred approach to task coordination is to concentrate all access to a resource in a single thread and then use the queue module to feed that thread with requests from other threads.",
+      "filter": {
+        "section": "stdlib2"
+      },
+      "alternative_gold": []
+    },
+    "hits": [
+      {
+        "chunk_id": "f39e791b3a1c6f2e6e8ecc08f27f651bf219d588e2f4ac7f792ab8949805ce4b",
+        "text": "The principal challenge of multi-threaded applications is coordinating threads\nthat share data or other resources.  To that end, the threading module provides\na number of synchronization primitives including locks, events, condition\nvariables, and semaphores.\n\nWhile those tools are powerful, minor design errors can result in problems that\nare difficult to reproduce.  So, the preferred approach to task coordination is\nto concentrate all access to a resource in a single thread and then use the\nqueue module to feed that thread with requests from other threads.\nApplications using queue.Queue objects for inter-thread communication and\ncoordination are easier to design, more readable, and more reliable.\n\nLogging\n\nThe logging module offers a full featured and flexible logging system.\nAt its simplest, log messages are sent to a file or to sys.stderr::",
+        "metadata": {
+          "page": "stdlib2:004",
+          "section": "stdlib2",
+          "language": "en",
+          "start_char": 827,
+          "version": "3.13.0",
+          "unit_end": 7890,
+          "document_id": "python-tutorial-stdlib2",
+          "end_char": 1682,
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+          "unit_start": 5944
+        },
+        "score": 0.5259959101676941,
+        "cosine_distance": 0.4740040898323059
+      },
+      {
+        "chunk_id": "d1bb26fe941dfbdef74f2f9628dcae2e94884632701e887b1092d7f2a8f40264",
+        "text": "Multi-threading\n\nThreading is a technique for decoupling tasks which are not sequentially\ndependent.  Threads can be used to improve the responsiveness of applications\nthat accept user input while other tasks run in the background.  A related use\ncase is running I/O in parallel with computations in another thread.",
+        "metadata": {
+          "start_char": 1638,
+          "language": "en",
+          "version": "3.13.0",
+          "document_id": "python-tutorial-stdlib2",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+          "unit_start": 3989,
+          "unit_end": 5944,
+          "end_char": 1953,
+          "page": "stdlib2:003",
+          "section": "stdlib2"
+        },
+        "score": 0.40726912021636963,
+        "cosine_distance": 0.5927308797836304
+      },
+      {
+        "chunk_id": "e08b4ec2b1d7958ae5428f83519fd9e49c7caf7efca17d5fe31e8db222f1f103",
+        "text": "The following code shows how the high level threading module can run\ntasks in background while the main program continues to run::\n\n   import threading, zipfile\n\n   class AsyncZip(threading.Thread):\n       def __init__(self, infile, outfile):\n           threading.Thread.__init__(self)\n           self.infile = infile\n           self.outfile = outfile\n\n       def run(self):\n           f = zipfile.ZipFile(self.outfile, 'w', zipfile.ZIP_DEFLATED)\n           f.write(self.infile)\n           f.close()\n           print('Finished background zip of:', self.infile)\n\n   background = AsyncZip('mydata.txt', 'myarchive.zip')\n   background.start()\n   print('The main program continues to run in foreground.')\n\n   background.join()    # Wait for the background task to finish\n   print('Main program waited until background was done.')",
+        "metadata": {
+          "page": "stdlib2:004",
+          "start_char": 0,
+          "section": "stdlib2",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+          "version": "3.13.0",
+          "unit_end": 7890,
+          "language": "en",
+          "end_char": 825,
+          "unit_start": 5944,
+          "document_id": "python-tutorial-stdlib2"
+        },
+        "score": 0.3518727421760559,
+        "cosine_distance": 0.6481272578239441
+      }
+    ],
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "A",
+    "question": {
+      "id": "Q20",
+      "split": "test",
+      "category": "metadata",
+      "question": "In stdlib2, where are log messages sent in the simplest logging setup?",
+      "expected_answer": "To a file or sys.stderr.",
+      "gold_source_id": "python-tutorial-stdlib2",
+      "gold_page": "stdlib2:004",
+      "evidence_quote": "At its simplest, log messages are sent to a file or to sys.stderr",
+      "filter": {
+        "section": "stdlib2"
+      },
+      "alternative_gold": []
+    },
+    "hits": [
+      {
+        "chunk_id": "2a204b2fc0ce41816e8de35a2583ccdb6e922f206e8b7bfdb21a55e44a6d9cc8",
+        "text": "thread with requests from other threads.\nApplications using queue.Queue objects for inter-thread communication and\ncoordination are easier to design, more readable, and more reliable.\n\nLogging\n\nThe logging module offers a full featured and flexible logging system.\nAt its simplest, log messages are sent to a file or to sys.stderr::\n\n   import logging\n   logging.debug('Debugging information')\n   logging.info('Informational message')\n   logging.warning('Warning:config file %s not found', 'server.co",
+        "metadata": {
+          "end_char": 1850,
+          "version": "3.13.0",
+          "page": "stdlib2:004",
+          "unit_start": 5944,
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+          "unit_end": 7890,
+          "language": "en",
+          "document_id": "python-tutorial-stdlib2",
+          "section": "stdlib2",
+          "start_char": 1350
+        },
+        "score": 0.6164563894271851,
+        "cosine_distance": 0.38354361057281494
+      },
+      {
+        "chunk_id": "dcb882d0233d93015d4ad2df44a7760a2a95fa45e28e4668969e86c7e2c567b6",
+        "text": "y: logging.DEBUG,\nlogging.INFO, logging.WARNING, logging.ERROR,\nand logging.CRITICAL.\n\nThe logging system can be configured directly from Python or can be loaded from\na user editable configuration file for customized logging without altering the\napplication.\n\nWeak References\n\nPython does automatic memory management (reference counting for most objects and\ngarbage collection to eliminate cycles).  The memory is freed shortly\nafter the last reference to it has been eliminated.\n\nThis approach works",
+        "metadata": {
+          "unit_start": 7890,
+          "unit_end": 10258,
+          "section": "stdlib2",
+          "page": "stdlib2:005",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+          "start_char": 450,
+          "document_id": "python-tutorial-stdlib2",
+          "end_char": 950,
+          "language": "en",
+          "version": "3.13.0"
+        },
+        "score": 0.48246216773986816,
+        "cosine_distance": 0.5175378322601318
+      },
+      {
+        "chunk_id": "a7282255b7d908f73d55ba8e0a660184da86d90107770a7438a323173904c9fa",
+        "text": "\nError Output Redirection and Program Termination\n\nThe sys module also has attributes for *stdin*, *stdout*, and *stderr*.\nThe latter is useful for emitting warnings and error messages to make them\nvisible even when *stdout* has been redirected::\n\n   >>> sys.stderr.write('Warning, log file not found starting a new one\\n')\n   Warning, log file not found starting a new one\n\nThe most direct way to terminate a script is to use sys.exit().\n\nString Pattern Matching\n\nThe re module provides regular expr",
+        "metadata": {
+          "language": "en",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib.rst",
+          "unit_start": 1927,
+          "page": "stdlib:002",
+          "document_id": "python-tutorial-stdlib",
+          "version": "3.13.0",
+          "end_char": 950,
+          "section": "stdlib",
+          "start_char": 450,
+          "unit_end": 4032
+        },
+        "score": 0.45623743534088135,
+        "cosine_distance": 0.5437625646591187
+      }
+    ],
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "B",
+    "question": {
+      "id": "Q20",
+      "split": "test",
+      "category": "metadata",
+      "question": "In stdlib2, where are log messages sent in the simplest logging setup?",
+      "expected_answer": "To a file or sys.stderr.",
+      "gold_source_id": "python-tutorial-stdlib2",
+      "gold_page": "stdlib2:004",
+      "evidence_quote": "At its simplest, log messages are sent to a file or to sys.stderr",
+      "filter": {
+        "section": "stdlib2"
+      },
+      "alternative_gold": []
+    },
+    "hits": [
+      {
+        "chunk_id": "f39e791b3a1c6f2e6e8ecc08f27f651bf219d588e2f4ac7f792ab8949805ce4b",
+        "text": "The principal challenge of multi-threaded applications is coordinating threads\nthat share data or other resources.  To that end, the threading module provides\na number of synchronization primitives including locks, events, condition\nvariables, and semaphores.\n\nWhile those tools are powerful, minor design errors can result in problems that\nare difficult to reproduce.  So, the preferred approach to task coordination is\nto concentrate all access to a resource in a single thread and then use the\nqueue module to feed that thread with requests from other threads.\nApplications using queue.Queue objects for inter-thread communication and\ncoordination are easier to design, more readable, and more reliable.\n\nLogging\n\nThe logging module offers a full featured and flexible logging system.\nAt its simplest, log messages are sent to a file or to sys.stderr::",
+        "metadata": {
+          "document_id": "python-tutorial-stdlib2",
+          "end_char": 1682,
+          "language": "en",
+          "page": "stdlib2:004",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+          "version": "3.13.0",
+          "section": "stdlib2",
+          "unit_end": 7890,
+          "start_char": 827,
+          "unit_start": 5944
+        },
+        "score": 0.4926081895828247,
+        "cosine_distance": 0.5073918104171753
+      },
+      {
+        "chunk_id": "05db02a66321c1b89e45fb12f2119d8bd922eb2548745ed033478f25c50f0453",
+        "text": "This produces the following output:\n\n   WARNING:root:Warning:config file server.conf not found\n   ERROR:root:Error occurred\n   CRITICAL:root:Critical error -- shutting down\n\nBy default, informational and debugging messages are suppressed and the output\nis sent to standard error.  Other output options include routing messages\nthrough email, datagrams, sockets, or to an HTTP Server.  New filters can select\ndifferent routing based on message priority: logging.DEBUG,\nlogging.INFO, logging.WARNING, logging.ERROR,\nand logging.CRITICAL.\n\nThe logging system can be configured directly from Python or can be loaded from\na user editable configuration file for customized logging without altering the\napplication.\n\nWeak References\n\nPython does automatic memory management (reference counting for most objects and\ngarbage collection to eliminate cycles).  The memory is freed shortly\nafter the last reference to it has been eliminated.",
+        "metadata": {
+          "end_char": 929,
+          "unit_start": 7890,
+          "start_char": 0,
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+          "unit_end": 10258,
+          "section": "stdlib2",
+          "page": "stdlib2:005",
+          "document_id": "python-tutorial-stdlib2",
+          "language": "en",
+          "version": "3.13.0"
+        },
+        "score": 0.47886550426483154,
+        "cosine_distance": 0.5211344957351685
+      },
+      {
+        "chunk_id": "6419c0a6cd68293afabe4bdc936ee1916f92074e70abd3ef4855fb1b24c5c62a",
+        "text": "import logging\n   logging.debug('Debugging information')\n   logging.info('Informational message')\n   logging.warning('Warning:config file %s not found', 'server.conf')\n   logging.error('Error occurred')\n   logging.critical('Critical error -- shutting down')",
+        "metadata": {
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+          "page": "stdlib2:004",
+          "language": "en",
+          "end_char": 1944,
+          "document_id": "python-tutorial-stdlib2",
+          "unit_start": 5944,
+          "unit_end": 7890,
+          "version": "3.13.0",
+          "section": "stdlib2",
+          "start_char": 1687
+        },
+        "score": 0.3806914687156677,
+        "cosine_distance": 0.6193085312843323
+      }
+    ],
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  },
+  {
+    "strategy": "C",
+    "question": {
+      "id": "Q20",
+      "split": "test",
+      "category": "metadata",
+      "question": "In stdlib2, where are log messages sent in the simplest logging setup?",
+      "expected_answer": "To a file or sys.stderr.",
+      "gold_source_id": "python-tutorial-stdlib2",
+      "gold_page": "stdlib2:004",
+      "evidence_quote": "At its simplest, log messages are sent to a file or to sys.stderr",
+      "filter": {
+        "section": "stdlib2"
+      },
+      "alternative_gold": []
+    },
+    "hits": [
+      {
+        "chunk_id": "f39e791b3a1c6f2e6e8ecc08f27f651bf219d588e2f4ac7f792ab8949805ce4b",
+        "text": "The principal challenge of multi-threaded applications is coordinating threads\nthat share data or other resources.  To that end, the threading module provides\na number of synchronization primitives including locks, events, condition\nvariables, and semaphores.\n\nWhile those tools are powerful, minor design errors can result in problems that\nare difficult to reproduce.  So, the preferred approach to task coordination is\nto concentrate all access to a resource in a single thread and then use the\nqueue module to feed that thread with requests from other threads.\nApplications using queue.Queue objects for inter-thread communication and\ncoordination are easier to design, more readable, and more reliable.\n\nLogging\n\nThe logging module offers a full featured and flexible logging system.\nAt its simplest, log messages are sent to a file or to sys.stderr::",
+        "metadata": {
+          "language": "en",
+          "version": "3.13.0",
+          "start_char": 827,
+          "unit_end": 7890,
+          "unit_start": 5944,
+          "page": "stdlib2:004",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+          "document_id": "python-tutorial-stdlib2",
+          "section": "stdlib2",
+          "end_char": 1682
+        },
+        "score": 0.4926081895828247,
+        "cosine_distance": 0.5073918104171753
+      },
+      {
+        "chunk_id": "05db02a66321c1b89e45fb12f2119d8bd922eb2548745ed033478f25c50f0453",
+        "text": "This produces the following output:\n\n   WARNING:root:Warning:config file server.conf not found\n   ERROR:root:Error occurred\n   CRITICAL:root:Critical error -- shutting down\n\nBy default, informational and debugging messages are suppressed and the output\nis sent to standard error.  Other output options include routing messages\nthrough email, datagrams, sockets, or to an HTTP Server.  New filters can select\ndifferent routing based on message priority: logging.DEBUG,\nlogging.INFO, logging.WARNING, logging.ERROR,\nand logging.CRITICAL.\n\nThe logging system can be configured directly from Python or can be loaded from\na user editable configuration file for customized logging without altering the\napplication.\n\nWeak References\n\nPython does automatic memory management (reference counting for most objects and\ngarbage collection to eliminate cycles).  The memory is freed shortly\nafter the last reference to it has been eliminated.",
+        "metadata": {
+          "end_char": 929,
+          "document_id": "python-tutorial-stdlib2",
+          "language": "en",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+          "unit_start": 7890,
+          "section": "stdlib2",
+          "unit_end": 10258,
+          "page": "stdlib2:005",
+          "version": "3.13.0",
+          "start_char": 0
+        },
+        "score": 0.47886550426483154,
+        "cosine_distance": 0.5211344957351685
+      },
+      {
+        "chunk_id": "6419c0a6cd68293afabe4bdc936ee1916f92074e70abd3ef4855fb1b24c5c62a",
+        "text": "import logging\n   logging.debug('Debugging information')\n   logging.info('Informational message')\n   logging.warning('Warning:config file %s not found', 'server.conf')\n   logging.error('Error occurred')\n   logging.critical('Critical error -- shutting down')",
+        "metadata": {
+          "version": "3.13.0",
+          "page": "stdlib2:004",
+          "unit_end": 7890,
+          "document_id": "python-tutorial-stdlib2",
+          "start_char": 1687,
+          "language": "en",
+          "section": "stdlib2",
+          "end_char": 1944,
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.13.0/Doc/tutorial/stdlib2.rst",
+          "unit_start": 5944
+        },
+        "score": 0.3806914687156677,
+        "cosine_distance": 0.6193085312843323
+      }
+    ],
+    "score": null,
+    "reason": "",
+    "reviewer": ""
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "required_files": 20,
+  "units": 93,
+  "questions": 20,
+  "trace_rows": 60,
+  "credentials_scan": "passed",
+  "note": "External repo push, author audit and Docker are outside local verification."
+}

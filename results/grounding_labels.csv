@@ -1,0 +1,16 @@
+strategy,question_id,score,reason,reviewer
+A,Q16,2,Rank 1 explicitly contrasts per-instance data and class data shared by all instances; source classes:009.,Codex (AI assistant); human author review pending
+B,Q16,2,Rank 2 states the distinction and Dog.kind/self.name example; rank 3 demonstrates shared and unique values.,Codex (AI assistant); human author review pending
+C,Q16,2,Same unfiltered evidence as B; rank 2 classes:009 contains both sides of the distinction.,Codex (AI assistant); human author review pending
+A,Q17,2,Rank 1 states finally's return overrides try's return; rank 3 bool_return demonstrates False.,Codex (AI assistant); human author review pending
+B,Q17,2,Rank 1 gives the complete finally-return rule; rank 3 includes executable bool_return example.,Codex (AI assistant); human author review pending
+C,Q17,2,Same unfiltered evidence as B; complete override condition and traceable example.,Codex (AI assistant); human author review pending
+A,Q18,0,"Top 3 discuss double-underscore mangling, class syntax and scopes; none states single-underscore convention or absence of enforced private variables.",Codex (AI assistant); human author review pending
+B,Q18,2,Rank 1 classes:014 explicitly says enforced private instance variables do not exist and _spam signals non-public API.,Codex (AI assistant); human author review pending
+C,Q18,2,"Same unfiltered rank 1 as B; includes convention, implementation-detail status and source.",Codex (AI assistant); human author review pending
+A,Q19,2,Rank 1 states resource access should concentrate in one thread fed requests via queue; leading/trailing fragments do not remove this rule.,Codex (AI assistant); human author review pending
+B,Q19,2,"Rank 1 gives shared-resource coordination problem, single-thread owner and queue request mechanism.",Codex (AI assistant); human author review pending
+C,Q19,2,Filtered rank 1 stdlib2:004 gives complete coordination approach; all top 3 within stdlib2.,Codex (AI assistant); human author review pending
+A,Q20,2,"Rank 1 directly states file or sys.stderr. Rank 3 outside requested chapter affects filter adherence, not evidence sufficiency.",Codex (AI assistant); human author review pending
+B,Q20,2,Rank 1 states file/sys.stderr; rank 2 explains default standard-error output and suppression of info/debug.,Codex (AI assistant); human author review pending
+C,Q20,2,Filtered rank 1 states file/sys.stderr with logging context; all top 3 trace to stdlib2.,Codex (AI assistant); human author review pending

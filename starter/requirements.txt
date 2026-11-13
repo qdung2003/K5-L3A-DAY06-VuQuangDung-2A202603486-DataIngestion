@@ -1,0 +1,10 @@
+# Reproduce the actually installed environment; CPU local model, persistent Chroma.
+chromadb==1.5.9
+sentence-transformers==6.3.0
+torch==2.15.0
+transformers==5.22.2
+numpy==2.5.4
+pypdf==6.21.4
+python-dotenv==1.2.4
+# Optional original PostgreSQL setup checker; not used by the Chroma pipeline.
+psycopg[binary]==3.3.8

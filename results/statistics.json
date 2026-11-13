@@ -1,0 +1,50 @@
+{
+  "A": {
+    "chunks": 456,
+    "characters": 204937,
+    "length_min": 52,
+    "length_max": 500,
+    "length_mean": 449.42324561403507,
+    "length_median": 500.0,
+    "length_p95": 500,
+    "tokens_before_model_truncation": 53856,
+    "chunks_exceeding_model_token_limit": 0,
+    "ingest_seconds": 44.33463269999993,
+    "reload_seconds": 2.2363248999999996,
+    "count_before_reload": 456,
+    "count_after_reload": 456,
+    "api_cost_usd": 0
+  },
+  "B": {
+    "chunks": 256,
+    "characters": 186056,
+    "length_min": 103,
+    "length_max": 1000,
+    "length_mean": 726.78125,
+    "length_median": 813.0,
+    "length_p95": 988,
+    "tokens_before_model_truncation": 48467,
+    "chunks_exceeding_model_token_limit": 45,
+    "ingest_seconds": 33.6356538,
+    "reload_seconds": 1.6340331999999762,
+    "count_before_reload": 256,
+    "count_after_reload": 256,
+    "api_cost_usd": 0
+  },
+  "C": {
+    "chunks": 256,
+    "characters": 186056,
+    "length_min": 103,
+    "length_max": 1000,
+    "length_mean": 726.78125,
+    "length_median": 813.0,
+    "length_p95": 988,
+    "tokens_before_model_truncation": 48467,
+    "chunks_exceeding_model_token_limit": 45,
+    "ingest_seconds": 33.015858500000036,
+    "reload_seconds": 1.400505399999929,
+    "count_before_reload": 256,
+    "count_after_reload": 256,
+    "api_cost_usd": 0
+  }
+}

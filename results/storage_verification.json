@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "separate_process_persisted_counts": {
+    "A": 456,
+    "B": 256,
+    "C": 256
+  },
+  "all_persisted_text_metadata_match_export": true,
+  "same_snapshot_count": [
+    2,
+    2
+  ],
+  "changed_snapshot_count": [
+    2,
+    1
+  ],
+  "obsolete_id_removed": "1017d207afc99520702ee44d998d954344f9aa7d2c7fb3a7c0ae6dab7e97b180",
+  "invalid_input_rejections": [
+    "mismatched_lengths",
+    "wrong_dimension",
+    "duplicate_ids",
+    "unsupported_filter",
+    "nonfinite_vector"
+  ],
+  "native_filter_checks": 2,
+  "vector_origin": "Actual B embeddings persisted by src.run; no mock/random vectors"
+}
