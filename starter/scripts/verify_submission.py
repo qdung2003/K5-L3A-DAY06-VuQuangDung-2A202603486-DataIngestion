@@ -25,7 +25,7 @@ traces = [json.loads(x) for x in (ROOT/"results/traces.jsonl").read_text(encodin
 assert len(traces) == 60 and all(len(x["hits"]) == 3 for x in traces)
 assert json.loads((ROOT/"results/storage_verification.json").read_text())["status"] == "passed"
 for path in ROOT.rglob("*"):
-    if ".venv" in path.parts or ".cache" in path.parts or "vector_store" in path.parts:
+    if ".venv" in path.parts or ".cache" in path.parts or "vector_store" in path.parts or "__pycache__" in path.parts:
         continue
     if path.is_file() and ".git" not in path.parts and path.name not in {"model.safetensors","tokenizer.json"}:
         if path.stat().st_size > 2_000_000: continue
