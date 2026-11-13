@@ -9,5 +9,5 @@
 - Repo bài nộp: https://github.com/qdung2003/K5-L3A-DAY06-VuQuangDung-2A202603486-DataIngestion
 - Tên repo: K5-L3A-DAY06-VuQuangDung-2A202603486-DataIngestion.
 - Commit mã nguồn và kết quả thí nghiệm: 64ccfd58e3b3a237c21cc036a8b6810e0851bfe7 (HEAD nhánh main). Xác định hash bằng git rev-parse HEAD hoặc trang Commits trên GitHub.
-- Audit thủ công của tác giả: chưa xác nhận; đã có nhãn AI kèm lý do và phiếu review trống, không nhận là tác giả đã chấm.
+- Audit thủ công của tác giả: đã chấm ngày 2026-11-13, điền đủ 90 dòng trong results/author_review_pending.csv (coherence 30, grounding 15, metadata 45); nhãn AI giữ lại để đối chiếu, điểm tác giả là kết quả chính thức.
 - Kênh nộp cho giảng viên và deadline: chưa được cung cấp; chưa xác nhận đã nộp qua kênh lớp, không suy từ CHECKPOINTS.

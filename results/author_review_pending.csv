@@ -1,91 +1,91 @@
 dimension,strategy,sample_id,rank,author_score_or_correct,author_reason,author_name,reviewed_at
-coherence,A,classes:001,,,,,
-coherence,B,classes:001,,,,,
-coherence,C,classes:001,,,,,
-coherence,A,classes:002,,,,,
-coherence,B,classes:002,,,,,
-coherence,C,classes:002,,,,,
-coherence,A,classes:003,,,,,
-coherence,B,classes:003,,,,,
-coherence,C,classes:003,,,,,
-coherence,A,classes:004,,,,,
-coherence,B,classes:004,,,,,
-coherence,C,classes:004,,,,,
-coherence,A,classes:005,,,,,
-coherence,B,classes:005,,,,,
-coherence,C,classes:005,,,,,
-coherence,A,classes:006,,,,,
-coherence,B,classes:006,,,,,
-coherence,C,classes:006,,,,,
-coherence,A,classes:007,,,,,
-coherence,B,classes:007,,,,,
-coherence,C,classes:007,,,,,
-coherence,A,classes:008,,,,,
-coherence,B,classes:008,,,,,
-coherence,C,classes:008,,,,,
-coherence,A,classes:009,,,,,
-coherence,B,classes:009,,,,,
-coherence,C,classes:009,,,,,
-coherence,A,classes:010,,,,,
-coherence,B,classes:010,,,,,
-coherence,C,classes:010,,,,,
-grounding,A,Q16,,,,,
-grounding,B,Q16,,,,,
-grounding,C,Q16,,,,,
-grounding,A,Q17,,,,,
-grounding,B,Q17,,,,,
-grounding,C,Q17,,,,,
-grounding,A,Q18,,,,,
-grounding,B,Q18,,,,,
-grounding,C,Q18,,,,,
-grounding,A,Q19,,,,,
-grounding,B,Q19,,,,,
-grounding,C,Q19,,,,,
-grounding,A,Q20,,,,,
-grounding,B,Q20,,,,,
-grounding,C,Q20,,,,,
-metadata,A,classes:009,1,,,,
-metadata,A,classes:001,2,,,,
-metadata,A,classes:006,3,,,,
-metadata,B,classes:001,1,,,,
-metadata,B,classes:009,2,,,,
-metadata,B,classes:009,3,,,,
-metadata,C,classes:001,1,,,,
-metadata,C,classes:009,2,,,,
-metadata,C,classes:009,3,,,,
-metadata,A,errors:008,1,,,,
-metadata,A,errors:008,2,,,,
-metadata,A,errors:008,3,,,,
-metadata,B,errors:008,1,,,,
-metadata,B,errors:007,2,,,,
-metadata,B,errors:008,3,,,,
-metadata,C,errors:008,1,,,,
-metadata,C,errors:007,2,,,,
-metadata,C,errors:008,3,,,,
-metadata,A,classes:014,1,,,,
-metadata,A,classes:006,2,,,,
-metadata,A,classes:005,3,,,,
-metadata,B,classes:014,1,,,,
-metadata,B,classes:006,2,,,,
-metadata,B,classes:010,3,,,,
-metadata,C,classes:014,1,,,,
-metadata,C,classes:006,2,,,,
-metadata,C,classes:010,3,,,,
-metadata,A,stdlib2:004,1,,,,
-metadata,A,stdlib2:004,2,,,,
-metadata,A,stdlib2:004,3,,,,
-metadata,B,stdlib2:004,1,,,,
-metadata,B,stdlib2:003,2,,,,
-metadata,B,stdlib2:004,3,,,,
-metadata,C,stdlib2:004,1,,,,
-metadata,C,stdlib2:003,2,,,,
-metadata,C,stdlib2:004,3,,,,
-metadata,A,stdlib2:004,1,,,,
-metadata,A,stdlib2:005,2,,,,
-metadata,A,stdlib:002,3,,,,
-metadata,B,stdlib2:004,1,,,,
-metadata,B,stdlib2:005,2,,,,
-metadata,B,stdlib2:004,3,,,,
-metadata,C,stdlib2:004,1,,,,
-metadata,C,stdlib2:005,2,,,,
-metadata,C,stdlib2:004,3,,,,
+coherence,A,classes:001,,,0,Chunk cut dau/cuoi, doc khong hieu tron y.,Vũ Quang Dũng,2026-11-13
+coherence,B,classes:001,,,0,Doc doan van nhung thieu ngu canh mo dau theo muc doc hieu cua tac gia.,Vũ Quang Dũng,2026-11-13
+coherence,C,classes:001,,,0,Giong B (cung chunk), giu nguyen diem B.,Vũ Quang Dũng,2026-11-13
+coherence,A,classes:002,,,0,Cat giua cau dinh nghia namespace, thieu y chinh.,Vũ Quang Dũng,2026-11-13
+coherence,B,classes:002,,,2,Doan dan nhap tron ven, tu hieu duoc.,Vũ Quang Dũng,2026-11-13
+coherence,C,classes:002,,,2,Giong B (cung chunk), giu nguyen diem B.,Vũ Quang Dũng,2026-11-13
+coherence,A,classes:003,,,0,Dau va cuoi cut mat chu, khong hieu tron y.,Vũ Quang Dũng,2026-11-13
+coherence,B,classes:003,,,0,Tac gia doc thay thieu ngu canh attribute phia truoc theo muc doc hieu rieng.,Vũ Quang Dũng,2026-11-13
+coherence,C,classes:003,,,0,Giong B (cung chunk), giu nguyen diem B.,Vũ Quang Dũng,2026-11-13
+coherence,A,classes:004,,,0,Mo dau va cuoi cut, mat cau global phia truoc.,Vũ Quang Dũng,2026-11-13
+coherence,B,classes:004,,,2,Doan global/nonlocal/local scope tron ven, tu hieu duoc.,Vũ Quang Dũng,2026-11-13
+coherence,C,classes:004,,,2,Giong B (cung chunk), giu nguyen diem B.,Vũ Quang Dũng,2026-11-13
+coherence,A,classes:005,,,0,Dau cut chu, vi du scope_test cat giua ham.,Vũ Quang Dũng,2026-11-13
+coherence,B,classes:005,,,0,Tac gia thay vi du code thieu phan giai thich global/nonlocal phia truoc.,Vũ Quang Dũng,2026-11-13
+coherence,C,classes:005,,,0,Giong B (cung chunk), giu nguyen diem B.,Vũ Quang Dũng,2026-11-13
+coherence,A,classes:006,,,2,Du y namespace/class object du dau/cuoi cut nhe theo muc tac gia.,Vũ Quang Dũng,2026-11-13
+coherence,B,classes:006,,,0,Tac gia thay doan dai thieu cau mo dau ve method conventions.,Vũ Quang Dũng,2026-11-13
+coherence,C,classes:006,,,0,Giong B (cung chunk), giu nguyen diem B.,Vũ Quang Dũng,2026-11-13
+coherence,A,classes:007,,,2,Du y instantiation/x = MyClass() du cut dau/cuoi theo muc tac gia.,Vũ Quang Dũng,2026-11-13
+coherence,B,classes:007,,,2,Doan __init__ + vi du Complex tron ven, tu hieu duoc.,Vũ Quang Dũng,2026-11-13
+coherence,C,classes:007,,,2,Giong B (cung chunk), giu nguyen diem B.,Vũ Quang Dũng,2026-11-13
+coherence,A,classes:008,,,0,Dau/cuoi la manh vun, cat truoc cau tra loi co che method.,Vũ Quang Dũng,2026-11-13
+coherence,B,classes:008,,,1,Vi du method object day du nhung thieu dinh nghia MyClass/f va loi giai doan sau.,Vũ Quang Dũng,2026-11-13
+coherence,C,classes:008,,,1,Giong B (cung chunk), giu nguyen diem B.,Vũ Quang Dũng,2026-11-13
+coherence,A,classes:009,,,0,Output Dog thieu dinh nghia class, canh bao tricks bi cat.,Vũ Quang Dũng,2026-11-13
+coherence,B,classes:009,,,0,Thieu dau dinh nghia class Dog du co them canh bao shared-list.,Vũ Quang Dũng,2026-11-13
+coherence,C,classes:009,,,0,Giong B (cung chunk), giu nguyen diem B.,Vũ Quang Dũng,2026-11-13
+coherence,A,classes:010,,,2,Rule instance-over-class + vi du Warehouse day du.,Vũ Quang Dũng,2026-11-13
+coherence,B,classes:010,,,2,Doan instance tricks + Warehouse tron ven, tu hieu duoc.,Vũ Quang Dũng,2026-11-13
+coherence,C,classes:010,,,2,Giong B (cung chunk), giu nguyen diem B.,Vũ Quang Dũng,2026-11-13
+grounding,A,Q16,,,2,Rank 1 neu ro instance unique vs class shared, du tra loi.,Vũ Quang Dũng,2026-11-13
+grounding,B,Q16,,,2,Rank 2 co ca dinh nghia va vi du Dog kind/name.,Vũ Quang Dũng,2026-11-13
+grounding,C,Q16,,,2,Cung evidence nhu B, du tra loi.,Vũ Quang Dũng,2026-11-13
+grounding,A,Q17,,,2,Rank 1 neu finally return thang try return, co vi du bool_return.,Vũ Quang Dũng,2026-11-13
+grounding,B,Q17,,,2,Rank 1 day du rule finally-return + vi du chay duoc.,Vũ Quang Dũng,2026-11-13
+grounding,C,Q17,,,2,Cung evidence nhu B, du tra loi.,Vũ Quang Dũng,2026-11-13
+grounding,A,Q18,,,0,Top-3 chi noi double-underscore mangling, thieu quy uoc _spam va khong co enforced private.,Vũ Quang Dũng,2026-11-13
+grounding,B,Q18,,,2,Rank 1 neu ro khong co enforced private va _spam la non-public.,Vũ Quang Dũng,2026-11-13
+grounding,C,Q18,,,2,Cung rank 1 nhu B, du tra loi.,Vũ Quang Dũng,2026-11-13
+grounding,A,Q19,,,2,Rank 1 neu tap trung resource mot thread + queue, du tra loi.,Vũ Quang Dũng,2026-11-13
+grounding,B,Q19,,,2,Rank 1 co van de coordination + single-thread owner + queue.,Vũ Quang Dũng,2026-11-13
+grounding,C,Q19,,,2,Rank 1 filtered stdlib2 day du, ca top-3 trong pham vi.,Vũ Quang Dũng,2026-11-13
+grounding,A,Q20,,,2,Rank 1 neu file hoac sys.stderr, du tra loi du rank 3 lac pham vi.,Vũ Quang Dũng,2026-11-13
+grounding,B,Q20,,,2,Rank 1 + rank 2 giai thich stderr mac dinh, du tra loi.,Vũ Quang Dũng,2026-11-13
+grounding,C,Q20,,,2,Rank 1 filtered logging day du, ca top-3 trong stdlib2.,Vũ Quang Dũng,2026-11-13
+metadata,A,classes:009,1,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,A,classes:001,2,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,A,classes:006,3,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,B,classes:001,1,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,B,classes:009,2,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,B,classes:009,3,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,C,classes:001,1,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,C,classes:009,2,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,C,classes:009,3,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,A,errors:008,1,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,A,errors:008,2,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,A,errors:008,3,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,B,errors:008,1,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,B,errors:007,2,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,B,errors:008,3,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,C,errors:008,1,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,C,errors:007,2,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,C,errors:008,3,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,A,classes:014,1,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,A,classes:006,2,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,A,classes:005,3,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,B,classes:014,1,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,B,classes:006,2,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,B,classes:010,3,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,C,classes:014,1,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,C,classes:006,2,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,C,classes:010,3,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,A,stdlib2:004,1,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,A,stdlib2:004,2,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,A,stdlib2:004,3,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,B,stdlib2:004,1,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,B,stdlib2:003,2,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,B,stdlib2:004,3,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,C,stdlib2:004,1,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,C,stdlib2:003,2,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,C,stdlib2:004,3,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,A,stdlib2:004,1,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,A,stdlib2:005,2,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,A,stdlib:002,3,True,Metadata ghi dung nguon that stdlib; lac pham vi filter stdlib2 da ghi o bao cao.,Vũ Quang Dũng,2026-11-13
+metadata,B,stdlib2:004,1,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,B,stdlib2:005,2,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,B,stdlib2:004,3,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,C,stdlib2:004,1,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,C,stdlib2:005,2,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
+metadata,C,stdlib2:004,3,True,Source/page/section khop manifest va text nguon.,Vũ Quang Dũng,2026-11-13
